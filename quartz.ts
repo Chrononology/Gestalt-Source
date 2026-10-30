@@ -6,7 +6,7 @@ const config = await loadQuartzConfig()
 if (!config.plugins) {
   config.plugins = { transformers: [], filters: [], emitters: [] }
 }
-config.plugins.transformers.push(TikzJax())
+config.plugins.transformers.unshift(TikzJax())
 
 export default config
 export const layout = await loadQuartzLayout()
