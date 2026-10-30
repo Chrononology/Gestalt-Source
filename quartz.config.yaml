@@ -270,13 +270,14 @@ plugins:
     order: 50
   - source: "@quartz-themes/core"
     options:
-      theme: "wikipedia"
-      mode: "both"
+      theme: wikipedia
+      mode: both
+    enabled: true
   - source: ./quartz/plugins/transformers/tikz
     enabled: true
     order: 75
     options:
-      fillFallback: "currentColor"
+      fillFallback: currentColor
 layout:
   groups:
     toolbar:
