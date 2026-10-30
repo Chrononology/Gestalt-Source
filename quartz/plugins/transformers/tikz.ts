@@ -15,7 +15,7 @@ const TIKZ_TIMEOUT = 30_000
 const TIKZ_CACHE_VERSION = 1
 const TIKZ_FAILURE_CACHE_MS = 5 * 60_000
 const TIKZ_CACHE_DIR = path.join(QUARTZ, '.quartz-cache', 'tikz')
-const texPackages = { pgfplots: '', amsmath: 'intlimits', amssymb: '' }
+const texPackages = { tikz: '', pgfplots: '', amsmath: 'intlimits', amssymb: '' }
 const tikzLibraries = 'arrows.meta,calc,positioning'
 const addToPreamble = '% comment'
 import { releasedOnReload } from '../../util/module-caches'
