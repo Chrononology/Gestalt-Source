@@ -156,6 +156,7 @@ Consider the following table of values:
 |  x  |  0  |  2  |  4  |
 |:---:|:---:|:---:|:---:|
 |  y  |  3  |  5  |  7  |
+
 Considering that there are only 3 ordered pairs presented in the table of values, the function is a finite set where:
 
 $$
@@ -214,6 +215,7 @@ Observe that:
 |  x  |  0  |  1  |  2  |  3  |  4  |  5  |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |  y  |  2  |  4  |  6  |  8  | 10  | 12  |
+
 When you plot these points...
 
 ```tikz

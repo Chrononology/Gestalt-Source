@@ -14,6 +14,7 @@ Algebraic expressions (in one variable) are usually identified by their number o
 |      2       |    Binomial    |
 |      3       |   Trinomial    |
 |      4+      |  Multinomial   |
+
 Operations between algebraic expressions follow the [[Arithmetic|properties of real numbers]].
 
 # Special Identities
