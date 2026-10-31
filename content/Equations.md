@@ -40,13 +40,14 @@ ${}a,b,c \in \mathbb{R}{}$ and ${}a\neq 0{}$
 Quadratic equations are also known as "second-degree equations"
 There are 3 main ways of solving a quadratic equation: Factoring, Completing the Square, Quadratic Formula
 In using these methods these properties are also used:
-"Zero Product Property"
+
+### Zero Product Property
 
 $$
 ab=0 \iff a=0\text{ or }b=0
 $$
 
-"Square Root Property"
+### Square Root Property
 
 $$
 x^{2}=k \implies x=\pm \sqrt{ k }

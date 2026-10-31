@@ -37,7 +37,7 @@ _Main note:[[Polynomials]]_
 
 _Main note: [[Equations]] and [[Inequalities]]_
 **Equations** are statements that state: 2 mathematical expressions are equal.
-**Inequalities** are statements that state:
+**Inequalities** are statements that state: 2 mathematical expressions are not equal.
 
 # Coordinates and Lines
 
