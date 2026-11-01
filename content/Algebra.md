@@ -41,7 +41,10 @@ _Main note: [[Equations]] and [[Inequalities]]_
 
 # Coordinates and Lines
 
-_Main note: [[Coordinates]]_
+_Main notes: [[Cartesian Coordinate Plane]], [[Lines]]_
+Numbers are rooted on the concept of a number line. Intersecting two number lines perpendicularly at ${}0{}$ creates the [[Cartesian Coordinate Plane]]. A pair of numbers coming from the x-axis and y-axis create an ordered pair called a coordinate.
+
+**Lines** can be constructed in a cartesian plane using a pair of coordinates.
 
 # Functions and Their Graphs
 

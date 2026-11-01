@@ -43,7 +43,7 @@ $$
 	>=Stealth,
 	node distance=0.8cm and 4cm
 	]
-	\draw[thick, fill=white] (0,0) ellipse (1.0cm and 2.7cm);
+	\draw[thick] (0,0) ellipse (1.0cm and 2.7cm);
 	\node[above] at  (0,2.7){$X$};
 	
 	\node (x1) [element] at (0,2) {$a$}; 
@@ -52,7 +52,7 @@ $$
 	\node (x4) [element] at (0, -1) {$d$}; 
 	\node (x5) [element] at (0, -2) {$e$}; 
 	
-	\draw[thick, fill=white] (4,0) ellipse (1.0cm and 2.7cm); 
+	\draw[thick] (4,0) ellipse (1.0cm and 2.7cm); 
 	\node[above] at (4, 2.7) {$Y$};
 	
 	\node (y1) [element] at (4, 1.5) {$1$}; 

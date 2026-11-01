@@ -8,6 +8,10 @@ _For the concept of Geometric Sequences, see [[Combinatorics]]_
 
 # 3D Shapes
 
+# Cartesian Plane
+
+_Main note: [[Cartesian Coordinate Plane]]_
+
 # Trigonometry
 
 ## Trigonometric Functions
