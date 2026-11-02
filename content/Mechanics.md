@@ -2,7 +2,7 @@
 
 # Units and Vectors
 
-_For more information, visit: [[Units]] and [[Vectors]]_
+_Main notes: [[Units]], [[Vectors]]_
 A Scalar quantity is just a quantity. A Vector quantity involves direction.
 
 A common example of this is:
@@ -12,11 +12,11 @@ They both have a unit of "m" but displacement has a direction where distance is 
 
 # Motion along a Straight Line (1D Kinematics)
 
-_For more information, visit: [[Kinematics]]_
+_Main note: [[Kinematics]]_
 
 # Motion in Two or Three Dimensions (2D/3D Kinematics)
 
-_For more information, visit: [[Kinematics]]_
+_Main note: [[Kinematics]]_
 
 # Newton's Laws of Motion
 

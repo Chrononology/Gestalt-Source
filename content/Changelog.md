@@ -2,6 +2,13 @@
 
 ## Added
 
+- Measurements
+- States of Matter
+- Classifications of Matter
+- Units
+- Properties of Matter
+- Music Recommendations
+
 ## Removed
 
 - Energy Drinks

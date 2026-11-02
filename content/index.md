@@ -2,7 +2,7 @@
 publish: true
 title: Gestalt
 created: 2026-10-29T16:27:45.426Z
-modified: 2026-11-02T12:35:01.711Z
+modified: 2026-11-02T16:35:27.063Z
 ---
 
 (noun)
@@ -16,6 +16,7 @@ Welcome to Gestalt. A place of notes of many kinds (usually academic related).
 [[Chemistry]]
 [[Physics]]
 [[Mathematics]]
+[[Music Recommendations]]
 
 # Notes
 
@@ -25,13 +26,19 @@ Ill try to find a way to fix it soon${}^{tm}{}$.
 
 For the mean time, please visit this google drive: [Click me!](https://drive.google.com/drive/folders/1fEGJqMgsJMxe3hjyWttUvkMz0P-0K-oQ?usp=sharing)
 
-This site is still a work in progress so there will be highlighted links and weird external links.
+This site is still a work in progress so there will be missing graphics.
 
 # What's New?
 
 [[Changelog|Full Changelog Here]]
 2026-Nov-02:
 
+- Added Measurements (Sciences)
+- Added States of Matter
+- Added Classification of Matter
+- Added Units
+- Added Properties of Matter
+- Added Music Recommendations
 - Changed Website Style
 - Removed Energy Drinks
 - Removed Lost Souls

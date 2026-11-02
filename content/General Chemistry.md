@@ -1,8 +1,14 @@
-**General Chemistry** is a branch of chemistry that deals with the core concepts of chemistry.
+**General Chemistry** is a branch of [[Chemistry]] that deals with the core concepts of chemistry.
+
+# Phases, Classification, and Properties of Matter
+
+_Main notes: [[States of Matter]], [[Classification of Matter]], [[Properties of Matter]]_
+Chemistry mainly deals with matter. A matter's state and classification can tell a matter's properties.
 
 # Measurements
 
-_Main note: [[Measuring]]_
+_Main notes: [[Measuring]], [[Units]]_
+Measurement is crucial in a lab setting.
 
 # Atoms, Molecules, and Ions
 
