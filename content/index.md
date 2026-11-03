@@ -2,7 +2,7 @@
 publish: true
 title: Gestalt
 created: 2026-10-29T16:27:45.426Z
-modified: 2026-11-03T02:47:55.798Z
+modified: 2026-11-03T04:21:30.063Z
 ---
 
 (noun)
@@ -28,11 +28,17 @@ For the mean time, please visit this google drive: [Click me!](https://drive.goo
 
 This site is still a work in progress so there will be missing graphics.
 
+Thoughts? Comments? Suggestions? Please check out this [Feedback Form](https://forms.gle/i3HPh6pihA5mXg427)
+
 # What's New?
 
 [[Changelog|Full Changelog Here]]
 2026-Nov-03:
 
+- Added Atoms (Sciences)
+- Added Atomic Theory
+- Added Atomic Model
+- Added Feedback page
 - Changed Website Style
 - Removed Energy Drinks
 

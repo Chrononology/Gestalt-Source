@@ -2,6 +2,10 @@
 
 ## Added
 
+- Atoms
+- Atomic Theory
+- Atomic Model
+
 ## Removed
 
 ## Changed
