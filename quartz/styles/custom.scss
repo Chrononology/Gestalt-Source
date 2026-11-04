@@ -2,10 +2,3 @@
 @use "themes";
 
 // put your custom CSS here!
-svg {
-  path, draw {
-    &:not([fill]) {
-      fill: currentColor;
-    }
-  }
-}
