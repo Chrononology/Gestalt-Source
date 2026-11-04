@@ -4,6 +4,8 @@
 
 - Chemical Formulas
 - Stoichiometry
+- Chemical Mass
+- Moles
 
 ## Removed
 

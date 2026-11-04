@@ -20,19 +20,24 @@ Atoms can be called as the a basic form of matter. It consists of a nucleus (pro
 The amount of protons determines the atom's identity.
 
 Combining together atoms, you get molecules.
-Changing the amount of electrons in an atom ioniz
+Changing the amount of electrons in an atom ionizes them.
 
 # Mass Relationships in Chemical Reactions
 
-_Main note: [[Stoichiometry]]_
+## Chemical Mass
+
+_Main note: [[Chemical Mass]]_
+Chemical Masses such as the atomic mass, molecular mass and molar mass is frequently used in stoichiometry.
 
 ## Chemical Formulas
 
 _Main note: [[Chemical Formula]]_
+A chemical formula is a way to write compounds using numbers and element symbols.
 
 ## Stoichiometry
 
 _Main note: [[Stoichiometry]]_
+Stoichiometry is used to related the mass of the reactants and the mass of the products. It runs based on the Law of Conservation of Mass.
 
 # Gas Laws
 
