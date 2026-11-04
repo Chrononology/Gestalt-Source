@@ -2,7 +2,7 @@
 publish: true
 title: Gestalt
 created: 2026-10-29T16:27:45.426Z
-modified: 2026-11-04T16:12:42.490Z
+modified: 2026-11-04T16:28:59.884Z
 ---
 
 (noun)
@@ -10,6 +10,8 @@ modified: 2026-11-04T16:12:42.490Z
 something that is made of many parts and yet is somehow more than or different from the combination of its parts
 
 Welcome to Gestalt. A place of notes of many kinds (usually academic related).
+
+To get started, try searching for a topic in the searchbar or clicking though links starting from this directory.
 
 # Directory
 
