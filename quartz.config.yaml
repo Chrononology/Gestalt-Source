@@ -278,6 +278,10 @@ plugins:
     order: 75
     options:
       fillFallback: currentColor
+  - source: github:SongHanseo/quartikz
+    enabled: true
+    order: 50
+    options: {}
 layout:
   groups:
     toolbar:
