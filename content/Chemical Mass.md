@@ -54,6 +54,6 @@ Example:
 How many moles are there in 134 grams of sodium? How many atoms does it contain?
 
 $$
-134\cancel{ g }\cancel{ \text{ Na} }\times \frac{1mol\text{ Na}}{22.99\cancel{ g }\cancel{ \text{ Na} }}=5.83 mol\text{ Na}\\ \\
+134\cancel{ g }\cancel{ \text{ Na} }\times \frac{1mol\text{ Na}}{22.99\cancel{ g }\cancel{ \text{ Na} }}=5.83 mol\text{ Na}\\ \\ \\
 134\cancel{ g }\cancel{ \text{ Na} }\times \frac{1\cancel{ mol }\cancel{ \text{ Na} }}{22.99\cancel{ g }\cancel{ \text{ Na} }}\times \frac{6.022\times 10^{23}\text{ atoms of Na}}{1\cancel{ mol } \cancel{ \text{ Na} }}=3.51\times 20^{24}\text{ atoms of Na}
 $$
