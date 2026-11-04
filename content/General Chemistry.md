@@ -26,17 +26,13 @@ Changing the amount of electrons in an atom ioniz
 
 _Main note: [[Stoichiometry]]_
 
-## Avogadro's Constant
+## Chemical Formulas
 
-Avogadro's constant is a number or amount of particles (atoms, molecules or formula units) per mole of substance
+_Main note: [[Chemical Formula]]_
 
-$$
-L=N_{A}=6.022\times10^{23} \ mol^{-1}
-$$
+## Stoichiometry
 
-A mole is a
-
-## Dimensional Analysis
+_Main note: [[Stoichiometry]]_
 
 # Gas Laws
 
