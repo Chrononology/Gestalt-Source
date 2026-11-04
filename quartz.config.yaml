@@ -275,7 +275,7 @@ plugins:
     enabled: true
   - source: github:SongHanseo/quartikz
     enabled: true
-    order: 50
+    order: 75
     options: {}
 layout:
   groups:
