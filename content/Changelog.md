@@ -6,6 +6,9 @@
 - Stoichiometry
 - Chemical Mass
 - Moles
+- mhchem renderer
+  - mhchem blocks can now be viewed properly!
+- Hess' Law
 
 ## Removed
 

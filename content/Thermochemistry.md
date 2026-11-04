@@ -109,6 +109,15 @@ $$
 
 ## Hess' Law
 
+Hess' Law is useful when finding the final enthalpy change of several stepped reaction or when the state of a reaction or product is changed.
+This is usually done by adding the enthalpy changes of each reaction step. Also:
+
+$$
+\Delta H_{reaction}=\sum n\times H_{f}(\text{products})-\sum n\times H_{f}(\text{reactants})
+$$
+
+(This will be further clarified in the coming months)
+
 # Thermodynamics
 
 _Main note: [[Thermodynamics]]_

@@ -2,7 +2,7 @@
 publish: true
 title: Gestalt
 created: 2026-10-29T16:27:45.426Z
-modified: 2026-11-04T09:45:05.298Z
+modified: 2026-11-04T16:12:42.490Z
 ---
 
 (noun)
@@ -39,10 +39,11 @@ Thoughts? Comments? Suggestions? Please check out this [Feedback Form](https://f
 - Added Stoichiometry
 - Added Chemical Mass
 - Added Moles (Chemistry)
+- Added a fix to render LaTeX mhchem
+- Added Hess' Law
 - Removed The Game
 - Removed Energy Drinks
 
 # What's Next?
 
-1. Chemistry Notes
-2. Physics Notes
+1. Physics Notes
