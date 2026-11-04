@@ -1,6 +1,12 @@
 {
   "version": "1.0.0",
   "plugins": {
+    "latex-with-mhchem": {
+      "source": "github:Chrononology/latex-with-mhchem",
+      "resolved": "https://github.com/Chrononology/latex-with-mhchem.git",
+      "commit": "e3d58af6eb7e0afa6f71dc47217cda60a6e38618",
+      "installedAt": "2026-11-04T15:16:30.625Z"
+    },
     "quartikz": {
       "source": "github:SongHanseo/quartikz",
       "resolved": "https://github.com/SongHanseo/quartikz.git",

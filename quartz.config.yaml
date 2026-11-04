@@ -277,6 +277,11 @@ plugins:
     enabled: true
     order: 75
     options: {}
+  - source: github:Chrononology/latex-with-mhchem
+    enabled: true
+    options:
+      renderEngine: katex
+    order: 80
 layout:
   groups:
     toolbar:
