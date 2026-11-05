@@ -1,3 +1,13 @@
+# 2026-Nov-05
+
+## Added
+
+- Periodic Trend
+
+## Removed
+
+## Changed
+
 # 2026-Nov-04
 
 ## Added

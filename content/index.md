@@ -2,7 +2,7 @@
 publish: true
 title: Gestalt
 created: 2026-10-29T16:27:45.426Z
-modified: 2026-11-04T16:28:59.884Z
+modified: 2026-11-05T03:00:08.836Z
 ---
 
 (noun)
@@ -28,22 +28,17 @@ Ill try to find a way to fix it soon${}^{tm}{}$.
 
 For the mean time, please visit this google drive: [Click me!](https://drive.google.com/drive/folders/1fEGJqMgsJMxe3hjyWttUvkMz0P-0K-oQ?usp=sharing)
 
-This site is still a work in progress so there will be missing graphics.
+This site is still a **work in progress** so there will be missing graphics.
 
 Thoughts? Comments? Suggestions? Please check out this [Feedback Form](https://forms.gle/i3HPh6pihA5mXg427)
 
 # What's New?
 
 [[Changelog|Full Changelog Here]]
-**2026-Nov-04**:
+**2026-Nov-05**:
 
-- Added Chemical Formula
-- Added Stoichiometry
-- Added Chemical Mass
-- Added Moles (Chemistry)
-- Added a fix to render LaTeX mhchem
-- Added Hess' Law
-- Removed The Game
+- Added Periodic Trends
+- Added Magnetism (Quantum Chemistry)
 - Removed Energy Drinks
 
 # What's Next?
