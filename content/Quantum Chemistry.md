@@ -90,9 +90,13 @@ It only completely works with the hydrogen atom. All other "multi-electron" syst
 
 There exists 4 quantum numbers in Schrödinger's Wave Function.
 
-The **Principal Quantum Number** (${}n{}$) is the first one. It describes the distance of the electron from the nucleus in energy levels. This number is a whole number starting from 1. Such that: ${}n=1,2,3,\dots{}$
+### Principal Quantum Number
+
+The **Principal Quantum Number** (${}n{}$) is the first one. It describes the relative distance of the electron from the nucleus in energy levels. This number is a whole number starting from 1. Such that: ${}n=1,2,3,\dots{}$
 Note that:
 A higher ${}n{}$ means more area where the electron might be in.
+
+### Angular Momentum Quantum Number
 
 The **Angular Momentum Quantum Number** (${}\ell{}$) is the next one. It describe the shape of the orbital. This number is based on the Principal Quantum Number. It is a whole number starting from 0 until ${}n-1{}$. Such that: ${}\ell=0,1,2,\dots,n-1{}$
 There exists names for these orbitals:
@@ -107,6 +111,8 @@ $$
 \end{aligned}
 $$
 
+### Magnetic Quantum Number
+
 The **Magnetic Quantum Number** (${}m_{\ell}{}$) the next one. It describes the orientation of the orbital in space. This number is based on the Angular Momentum Number. It is a whole number starting from ${}-\ell,\dots,0,\dots,+\ell{}$. Such that: ${}m_{\ell}=-\ell, \dots,0,\dots,\ell{}$
 
 $$
@@ -117,6 +123,8 @@ $$
 &\ell=3 &m_{\ell}&=-3,-2,-1,0,1,2,3
 \end{aligned}
 $$
+
+### Spin Quantum Number
 
 The **Spin Quantum Number** (${}m_{s}{}$) is the last. It describes the "spin" of the electron. This number is either ${}+\frac{1}{2}{}$ or ${}-\frac{1}{2}{}$
 
@@ -429,7 +437,7 @@ An example:
 $$
 \begin{aligned}
 & \ce{_{8}O} && 1s^{2},2s^{2},2p^{5}\\
-& \ce{_{35}Br}  && 1s^{2},2^{2},2p^{6},3s^{2},3p^{6},4s^{2},3d^{10},4p^{5}\\
+& \ce{_{35}Br}  && 1s^{2},2s^{2},2p^{6},3s^{2},3p^{6},4s^{2},3d^{10},4p^{5}\\
 \end{aligned}
 $$
 
@@ -465,7 +473,7 @@ The Electron of each noble gases are as follows:
 \node at (1.5,3.5){Argon/Ar};
 \node at (1.5,2.5){Krypton/Kr};
 \node at (1.5,1.5){Xenon/Xe};
-\node at (1.5,0.5){Radon/Ra};
+\node at (1.5,0.5){Radon/Rn};
 
 \node at (5,5.5){2};
 \node at (5,4.5){10};
@@ -495,3 +503,11 @@ $$
 $$
 
 ## Magnetism
+
+### Paramagnetic
+
+Atoms are paramagnetic (attracted to magnets) if there is at least 1 unpaired electron.
+
+### Diamagnetic
+
+Atoms are diamagnetic (repelled by magnets) if all electrons are paired.
