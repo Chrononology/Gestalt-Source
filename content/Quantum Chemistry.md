@@ -446,52 +446,14 @@ $$
 The noble gas shorthand combines the electron configuration of the most previous noble gas of the element.
 The Electron of each noble gases are as follows:
 
-```tikz
-\usepackage{amsmath}
-\begin{document}
-\begin{tikzpicture}
-
-\draw[line width=2pt](0,0)--(20,0);
-\draw[line width=2pt](0,7)--(20,7);
-\draw[line width=2pt](0,0)--(0,7);
-\draw[line width=2pt](20,0)--(20,7);
-\draw(0,1)--(20,1);
-\draw(0,2)--(20,2);
-\draw(0,3)--(20,3);
-\draw(0,4)--(20,4);
-\draw(0,5)--(20,5);
-\draw[line width=2pt](0,6)--(20,6);
-\draw(3,0)--(3,7);
-\draw(7,0)--(7,7);
-
-\node at (1.5,6.5){$\textbf{Noble Gas}$};
-\node at (5,6.5){$\textbf{No. of Electrons}$};
-\node at (13.5,6.5){$\textbf{Electron Configuration}$};
-
-\node at (1.5,5.5){Helium/He};
-\node at (1.5,4.5){Neon/Ne};
-\node at (1.5,3.5){Argon/Ar};
-\node at (1.5,2.5){Krypton/Kr};
-\node at (1.5,1.5){Xenon/Xe};
-\node at (1.5,0.5){Radon/Rn};
-
-\node at (5,5.5){2};
-\node at (5,4.5){10};
-\node at (5,3.5){18};
-\node at (5,2.5){36};
-\node at (5,1.5){54};
-\node at (5,0.5){86};
-
-\node at (13.5,5.5){$1s^{2}$};
-\node at (13.5,4.5){$1s^{2},2s^{2},2p^{6}$};
-\node at (13.5,3.5){$1s^{2},2s^{2},2p^{6},3s^{2},3p^{6}$};
-\node at (13.5,2.5){$1s^{2},2s^{2},2p^{6},3s^{2},3p^{6},4s^{2},3d^{10},4p^{6}$};
-\node at (13.5,1.5){$1s^{2},2s^{2},2p^{6},3s^{2},3p^{6},4s^{2},3d^{10},4p^{6},5s^{2},4d^10,5p^{6}$};
-\node at (13.5,0.5){$1s^{2},2s^{2},2p^{6},3s^{2},3p^{6},4s^{2},3d^{10},4p^{6},5s^{2},4d^10,5p^{6},6s^{2},4f^{14},5d^{10},6p^{6}$};
-
-\end{tikzpicture}
-\end{document}
-```
+| Noble Gas  | No. of Electrons |                                                 Electron Configuration                                                  |
+| :--------: | :--------------: | :---------------------------------------------------------------------------------------------------------------------: |
+| Helium/He  |     ${}2{}$      |                                                      $\ce{1s^{2}}$                                                      |
+|  Neon/Ne   |     ${}10{}$     |                                             ${}\ce{1s^{2},2s^{2},2p^{6}}{}$                                             |
+|  Argon/Ar  |     ${}18{}$     |                                      ${}\ce{1s^{2},2s^{2},2p^{6},3s^{2},3p^{6}}{}$                                      |
+| Krypton/Kr |     ${}36{}$     |                           ${}\ce{1s^{2},2s^{2},2p^{6},3s^{2},3p^{6},4s^{2},3d^{10},4p^{6}}{}$                           |
+|  Xenon/Xe  |     ${}54{}$     |                ${}\ce{1s^{2},2s^{2},2p^{6},3s^{2},3p^{6},4s^{2},3d^{10},4p^{6},5s^{2},4d^{10},5p^{6}}{}$                |
+|  Radon/Rn  |     ${}86{}$     | ${}\ce{1s^{2},2s^{2},2p^{6},3s^{2},3p^{6},4s^{2},3d^{10},4p^{6},5s^{2},4d^{10},5p^{6},6s^{2},4f^{14},5d^{10},6p^{6}}{}$ |
 
 Example of use:
 
@@ -501,6 +463,13 @@ $$
 & \ce{_{35}Br}  && \ce{[Ar]}4s^{2},3d^{10},4p^{5}\\
 \end{aligned}
 $$
+
+Notes:
+ionization of transition metals have their ${}ns{}$ electrons removed first before thier ${}(n-1)d{}$ electrons. This is because their ${}ns{}$ electrons are on the outer most energy level.
+
+### Isoelectronic Species
+
+Ions and/or atoms are isoelectronic with each other if they have the same amount of electrons
 
 ## Magnetism
 

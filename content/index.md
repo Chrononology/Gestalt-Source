@@ -2,7 +2,7 @@
 publish: true
 title: Gestalt
 created: 2026-10-29T16:27:45.426Z
-modified: 2026-11-05T03:00:08.836Z
+modified: 2026-11-08T15:29:28.519Z
 ---
 
 (noun)
@@ -10,6 +10,9 @@ modified: 2026-11-05T03:00:08.836Z
 something that is made of many parts and yet is somehow more than or different from the combination of its parts
 
 Welcome to Gestalt. A place of notes of many kinds (usually academic related).
+This library is curated and authored by:
+**The Unsolicited Reviewer Maker** and **The unLicensed Professional ~~Slacker~~ Student**
+(_we are both the same person_)
 
 To get started, try searching for a topic in the searchbar or clicking though links starting from this directory.
 
@@ -35,11 +38,13 @@ Thoughts? Comments? Suggestions? Please check out this [Feedback Form](https://f
 # What's New?
 
 [[Changelog|Full Changelog Here]]
-**2026-Nov-05**:
+**2026-Nov-08**:
 
 - Added Periodic Trends
-- Added Magnetism (Quantum Chemistry)
+- Added Isoelectronic Species
+- Added Vectors
 - Removed Energy Drinks
+- Changed the noble gas core table in Quantum Chemistry
 
 # What's Next?
 

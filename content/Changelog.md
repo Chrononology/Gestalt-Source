@@ -1,3 +1,19 @@
+# 2026-Nove-08
+
+## Added
+
+- Isoelectronic Species
+- Vectors
+
+## Removed
+
+- Energy Drinks
+
+## Changed
+
+- Periodic Trend
+- Noble Gas Core in Quantum Chemistry
+
 # 2026-Nov-05
 
 ## Added
