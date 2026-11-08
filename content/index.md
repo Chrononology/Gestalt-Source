@@ -2,7 +2,7 @@
 publish: true
 title: Gestalt
 created: 2026-10-29T16:27:45.426Z
-modified: 2026-11-08T15:29:28.519Z
+modified: 2026-11-08T15:36:08.354Z
 ---
 
 (noun)
@@ -49,3 +49,5 @@ Thoughts? Comments? Suggestions? Please check out this [Feedback Form](https://f
 # What's Next?
 
 1. Physics Notes
+
+"Weird student giving notes. Its probably bad notes, but its free" - (un)Licensed Professional Student
