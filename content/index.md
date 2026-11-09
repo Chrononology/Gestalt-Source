@@ -1,9 +1,8 @@
 ---
 publish: true
 title: Gestalt
-description: '"Weird student giving notes. Its probably bad notes, but its free" - (un)Licensed Professional Student'
 created: 2026-10-29T16:27:45.426Z
-modified: 2026-11-09T15:37:45.521Z
+modified: 2026-11-09T15:43:02.161Z
 ---
 
 (noun)
@@ -52,6 +51,10 @@ Thoughts? Comments? Suggestions? Please check out this [Feedback Form](https://f
 
 1. Physics Notes
 
+---
+
 This library is curated and authored by:
-**The Unsolicited Reviewer Maker** and **The unLicensed Professional ~~Slacker~~ Student**
+**The Unsolicited Reviewer Maker** & **The unLicensed Professional ~~Slacker~~ Student**
 (_we are both the same person_)
+
+"Weird student giving notes. Its probably bad notes, but its free" - (un)Licensed Professional Student
