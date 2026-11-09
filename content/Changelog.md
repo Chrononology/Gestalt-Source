@@ -7,11 +7,13 @@
 - Ionization Energy
 - Electron Affinity
 - Chemical Bonding
+- Trigonometry
 - Some Liked Songs
 
 ## Removed
 
 - Energy Drinks
+- Lost Rain Flower
 
 ## Changed
 
