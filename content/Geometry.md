@@ -4,6 +4,8 @@ _For the concept of Geometric Sequences, see [[Combinatorics]]_
 
 # Core Concepts
 
+Main notes: [[Lines]], [[Angles]]
+
 # 2D Shapes
 
 # 3D Shapes
@@ -15,11 +17,3 @@ _Main note: [[Cartesian Coordinate Plane]]_
 # Trigonometry
 
 _Main note: [[Trigonometry]]_
-
-## Trigonometric Functions
-
-## Trigonometric Identities
-
-## Inverse Trigonometic Functions
-
-## Trigonometric Equations
