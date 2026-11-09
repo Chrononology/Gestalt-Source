@@ -109,13 +109,17 @@ ${}k={}$spring stiffness or force constant (${}\frac{N}{m}{}$)
 Elastic Work
 
 $$
-W_{el}=-\Delta U_{el}
+W_{el}=-\Delta U_{el}=\frac{1}{2}kx_{2}^{2}-\frac{1}{2}kx_{1}^{2}
 $$
 
 Hooke's Law
 
 $$
 F=-kx
+$$
+
+$$
+F=\int_{x_{1}}^{x_{2}}kxdx
 $$
 
 ### Conservation of Energy

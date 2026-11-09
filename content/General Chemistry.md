@@ -64,6 +64,8 @@ _Main note: [[Periodic Trends]]_
 
 # Chemical Bonding
 
+_Main note: [[Chemical Bonding]]_
+
 # Molecular Geometry
 
 # Intermolecular Forces

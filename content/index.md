@@ -2,7 +2,7 @@
 publish: true
 title: Gestalt
 created: 2026-10-29T16:27:45.426Z
-modified: 2026-11-08T15:36:08.354Z
+modified: 2026-11-09T05:01:03.117Z
 ---
 
 (noun)
@@ -38,13 +38,15 @@ Thoughts? Comments? Suggestions? Please check out this [Feedback Form](https://f
 # What's New?
 
 [[Changelog|Full Changelog Here]]
-**2026-Nov-08**:
+**2026-Nov-09**:
 
-- Added Periodic Trends
-- Added Isoelectronic Species
-- Added Vectors
+- Added Kinematics
+- Added Ionic Radius
+- Added Ionization Energy
+- Added Electron Affinity
+- Added Chemical Bonding
+- Added Some Liked Songs
 - Removed Energy Drinks
-- Changed the noble gas core table in Quantum Chemistry
 
 # What's Next?
 

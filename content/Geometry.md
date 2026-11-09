@@ -14,6 +14,8 @@ _Main note: [[Cartesian Coordinate Plane]]_
 
 # Trigonometry
 
+_Main note: [[Trigonometry]]_
+
 ## Trigonometric Functions
 
 ## Trigonometric Identities

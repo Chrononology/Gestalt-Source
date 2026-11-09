@@ -1,4 +1,21 @@
-# 2026-Nove-08
+# 2026-Nov-09
+
+## Added
+
+- Kinematics
+- Atomic Radius
+- Ionization Energy
+- Electron Affinity
+- Chemical Bonding
+- Some Liked Songs
+
+## Removed
+
+- Energy Drinks
+
+## Changed
+
+# 2026-Nov-08
 
 ## Added
 

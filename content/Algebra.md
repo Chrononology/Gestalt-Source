@@ -60,3 +60,5 @@ A Relation is a Function (Rule) if and only if an element ${}x \in X{}$ is assig
 Functions are also known as **mapping**. They are named using letters like ${}f,g,h,\dots{}$
 
 # Conic Sections
+
+_Main note: [[Conic Sections]]_
