@@ -7,7 +7,7 @@ Rays are lines the extend indefinitely on one side.
 # Slope
 
 The slope is also called the inclination of the line.
-The inclination of a line is defined as the least counterclockwise/anti-clockwise angle ${}\theta{}$ which the ${}x{}$-axis must turn (at the point of intersection) to coincide with the intersecting line.
+The inclination of a line is defined as the least counterclockwise/anti-clockwise [[Angles|angle]] ${}\theta{}$ which the ${}x{}$-axis must turn (at the point of intersection) to coincide with the intersecting line.
 
 $$
 m=\tan \theta
@@ -20,8 +20,8 @@ $$
 \draw[Latex-Latex,very thick](-0.5,0)--(3.5,0) node[above]{$x$};
 \draw[Latex-Latex,very thick](0,-0.5)--(0,3.5) node[right]{$y$};
 \draw[-Latex,color=red,thick](0,0)--(3,3);
-\draw[-Latex,thick](1,0) .. controls(0.95,0.3) .. (0.5,0.5);
-\node[label={right:$\theta$}] at (0.95,0.3){};
+\draw[-Latex,thick](1,0) .. controls(0.89443,0.44721) .. (0.70711,0.70711);
+\node[label={right:$\theta$}] at (0.89443,0.44721){};
 \end{tikzpicture}
 \end{document}
 ```
@@ -46,8 +46,8 @@ $$
 \node[circle,fill=red,inner sep=1.5pt,label={below:$R(x_{2},y_{1})$}] at (5,1){};
 \node[label={above:$x_{2}-x_{1}$}] at (3.5,1){};
 \node[label={left:$y_{2}-y_{1}$}] at (5.15,3){};
-\draw[-Latex,thick](2,1) .. controls(1.95,1.3) .. (1.5,1.5);
-\node[label={right:$\theta$}] at (1.75,1.4){};
+\draw[-Latex,thick](2,1) .. controls(1.92437,1.38149) .. (1.70711,1.70711);
+\node[label={right:$\theta$}] at (1.92,1.38){};
 \end{tikzpicture}
 \end{document}
 ```
