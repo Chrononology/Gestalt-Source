@@ -1,3 +1,16 @@
+# 2026-Nov-10
+
+## Added
+
+- Trigonometric Functions
+- Derivations of Ideal Gas Law
+- Diffusion and Effusion of Gases
+
+## Removed
+
+- Energy Drinks
+- Lost Rain Flower
+
 # 2026-Nov-09
 
 ## Added

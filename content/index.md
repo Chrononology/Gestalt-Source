@@ -2,7 +2,7 @@
 publish: true
 title: Gestalt
 created: 2026-10-29T16:27:45.426Z
-modified: 2026-11-09T15:43:02.161Z
+modified: 2026-11-10T15:16:57.578Z
 ---
 
 (noun)
@@ -35,15 +35,11 @@ Thoughts? Comments? Suggestions? Please check out this [Feedback Form](https://f
 # What's New?
 
 [[Changelog|Full Changelog Here]]
-**2026-Nov-09**:
+\*\*2026-Nov-10:
 
-- Added Kinematics
-- Added Ionic Radius
-- Added Ionization Energy
-- Added Electron Affinity
-- Added Chemical Bonding
-- Added Trigonometry
-- Added Some Liked Songs
+- Added Trigonometric Functions
+- Added Derivations from Ideal Gas Law
+- Added Diffusion and Effusion of Gasses
 - Removed Energy Drinks
 - Removed a Lost Rain Flower
 
