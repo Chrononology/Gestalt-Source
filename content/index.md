@@ -2,7 +2,7 @@
 publish: true
 title: Gestalt
 created: 2026-10-29T16:27:45.426Z
-modified: 2026-11-10T15:16:57.578Z
+modified: 2026-11-11T09:23:01.538Z
 ---
 
 (noun)
@@ -35,7 +35,7 @@ Thoughts? Comments? Suggestions? Please check out this [Feedback Form](https://f
 # What's New?
 
 [[Changelog|Full Changelog Here]]
-\*\*2026-Nov-10:
+**2026-Nov-10:**
 
 - Added Trigonometric Functions
 - Added Derivations from Ideal Gas Law
