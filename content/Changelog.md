@@ -1,3 +1,16 @@
+# 2026-Nov-14
+
+## Added
+
+- Trigonometric Graphs
+
+## Removed
+
+- Energy Drinks
+- Lost Rain Flower
+
+## Changed
+
 # 2026-Nov-12
 
 ## Added
