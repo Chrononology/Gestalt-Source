@@ -11,7 +11,7 @@ Distance and Displacement
 They both involve length. However, distance is the total length of the travelled path while displacement is the change in position.
 To describe displacement with just how far an object moves is not enough, it also needs direction.
 
-One may travel 20km from a house to a shop and come back but their total displacement is simply ${}0{}$.
+One may travel 20m to and from a shop but their total displacement is simply ${}0{}$.
 
 # Motion along a Straight Line (1D Kinematics)
 
@@ -126,4 +126,22 @@ $$
 
 ### Conservative and Non Conservative Forces
 
+Conservative is the difference between the initial and final values of a potenial energy function given:
+
+$$
+F=- \frac{dU(x)}{dx}\\
+\vec{F}=-\left( \frac{\partial U(x)}{\partial x}\hat{i}+\frac{\partial U(y)}{\partial y}\hat{j}+\frac{\partial U(z)}{\partial z}\hat{k} \right)\\
+\vec{F}=-\nabla \vec{U}
+$$
+
+Non-Conservative depends on the path taken and is distance reliant
+
 ## Power
+
+$$
+P_{ave}=\frac{\Delta W}{\Delta t}\\
+P=\lim_{ \Delta t \to 0 } \frac{\Delta W}{\Delta t}=\frac{dW}{dt}\\
+P=\vec{F}\cdot \vec{v}
+$$
+
+${}1hp=550\text{ ft lbs/s}=746\text{W}{}$

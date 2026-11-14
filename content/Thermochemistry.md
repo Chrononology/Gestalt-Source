@@ -156,7 +156,7 @@ $$
 
 Where:
 ${}q=\Delta H={}$Change in Enthalpy (in constant pressure)
-${}R={}$Ideal Gas Constant
+${}R={}$Ideal Gas Constant (${}8.314 \frac{J}{K\cdot mol}{}$)
 ${}T={}$Temperature in Kelvin
 ${}\Delta n=n_{products}-n_{reactants}={}$Change in gaseous mol
 

@@ -2,7 +2,7 @@
 publish: true
 title: Gestalt
 created: 2026-10-29T16:27:45.426Z
-modified: 2026-11-11T09:23:01.538Z
+modified: 2026-11-12T08:26:04.549Z
 ---
 
 (noun)
@@ -35,11 +35,9 @@ Thoughts? Comments? Suggestions? Please check out this [Feedback Form](https://f
 # What's New?
 
 [[Changelog|Full Changelog Here]]
-**2026-Nov-10:**
+**2026-Nov-12:**
 
-- Added Trigonometric Functions
-- Added Derivations from Ideal Gas Law
-- Added Diffusion and Effusion of Gasses
+- Added Trigonometric Graphs
 - Removed Energy Drinks
 - Removed a Lost Rain Flower
 
