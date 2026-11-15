@@ -172,7 +172,7 @@ $$
 ### Sine function
 
 $$
-y=A\sin(Bx+C)+D
+y=A\sin(Bx-C)+D
 $$
 
 Where:
@@ -221,6 +221,7 @@ Vertical Translation: ${}|D|{}$ units up if ${}D>0{}$ or ${}|D|{}$ units down if
 Domain${}=\mathbb{R}{}$
 ${}R=[-A+D,A+D]{}$ if ${}A>0{}$
 ${}R=[A+D,-A+D]{}$ if ${}A<0{}$
+The function intersects the ${}x{}$-axis at all ${}x=\frac{k\pi}{B} +C{}$
 
 Variating ${}A{}$:
 
@@ -369,7 +370,7 @@ legend style={at={(1,0)},anchor=south east,thick,inner sep=3pt}
 ### Cosine function
 
 $$
-y=A\cos(Bx+C)+D
+y=A\cos(Bx-C)+D
 $$
 
 ```tikz
@@ -410,6 +411,7 @@ Vertical Translation: ${}|D|{}$ units up if ${}D>0{}$ or ${}|D|{}$ units down if
 ${}D=\mathbb{R}{}$
 ${}R=[-A+D,A+D]{}$ if ${}A>0{}$
 ${}R=[A+D,-A+D]{}$ if ${}A<0{}$
+The function intersects the ${}x{}$-axis at all ${}x=\frac{(2k+1)\pi}{2B}+C{}$
 
 Variating ${}A{}$:
 
@@ -558,7 +560,7 @@ legend style={at={(1,0)},anchor=south east,thick,inner sep=3pt}
 ### Tangent function
 
 $$
-y=\frac{A\sin(Bx+C)+D}{A\cos(Bx+C)+D}
+y=\frac{A\sin(Bx+C)+D}{A\cos(Bx+C)+D}=A\tan(Bx-C)+D
 $$
 
 ```tikz
@@ -635,10 +637,12 @@ legend style={at={(1,0)},anchor=south east,thick,inner sep=3pt}
 \end{document}
 ```
 
-The function is asymptotic to all ${}x=\frac{(2k+1)\pi}{2}{}$
-${}D=\mathbb{R}\setminus \left\{  \frac{(2k+1)\pi}{2}:k \in \mathbb{Z}  \right\}{}$
+The function is asymptotic to all ${}x=\frac{(2k+1)\pi}{2B}+C{}$
+${}D=\mathbb{R}\setminus \left\{  \frac{(2k+1)\pi}{2B}+C:k \in \mathbb{Z}  \right\}{}$
 ${}R=\mathbb{R}{}$
-Its period is ${}\pi{}$
+Period: ${}| \frac{\pi}{B} |{}$
+Phase Shift: ${}|\frac{C}{B}|{}$
+Vertical Translation: ${}|D|{}$ units up if ${}D>0{}$ or ${}|D|{}$ units down if ${}D<0{}$
 
 Variating ${}A{}$:
 
@@ -681,10 +685,263 @@ legend style={at={(1,0)},anchor=south east,thick,inner sep=3pt}
 \end{document}
 ```
 
+Variating ${}B{}$:
+
+```tikz
+\usepackage{tikz}
+\usepackage{pgfplots,amsmath}
+\usepgflibrary{shapes.geometric}
+\usetikzlibrary{calc,arrows.meta}
+\pgfplotsset{my style/.append style={
+axis line style={-Latex,line width=1pt}, 
+axis lines=middle, 
+xlabel={$x$}, ylabel={$y$}, 
+axis equal, grid=both, 
+major grid style={line width=.3pt, draw=black!50}, 
+minor grid style={line width=0.1pt, draw=gray!50}, 
+width=10cm, height=10cm, 
+scale only axis=true, 
+tick label style={font=\small},
+legend style={at={(1,0)},anchor=south east,thick,inner sep=3pt}
+}}
+
+\begin{document}
+\begin{tikzpicture} 
+
+\begin{axis}[my style, xtick={-6.2832,-4.7124,...,6.2832}, xticklabels={$-2\pi$,$-\frac{3}{2}\pi$,$-\pi$,$-\frac{1}{2}\pi$,$0$,$\frac{1}{2}\pi$,$\pi$,$\frac{3}{2}\pi$,$2\pi$}, ytick={-6,-5,...,6}, xmin=-6.2832, xmax=6.2832, ymin=-6, ymax=6, minor tick num=1,restrict y to domain=-20:20,unbounded coords = jump,samples=250,smooth] 
+
+\addplot[color=blue,domain=-2*pi:2*pi,no marks,line width=1pt]{tan(deg(2*x))};
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (-(3/4)*pi, -6) (-(3/4)*pi, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (-(1/4)*pi, -6) (-(1/4)*pi, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { ((3/4)*pi, -6) ((3/4)*pi, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { ((1/4)*pi, -6) ((1/4)*pi, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (-(7/4)*pi, -6) (-(7/4)*pi, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (-(5/4)*pi, -6) (-(5/4)*pi, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { ((7/4)*pi, -6) ((7/4)*pi, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { ((5/4)*pi, -6) ((5/4)*pi, 6) };
+\addlegendentry{\(f(x)=\tan 2x\)}
+\end{axis} 
+
+\end{tikzpicture}
+\end{document}
+```
+
+```tikz
+\usepackage{tikz}
+\usepackage{pgfplots,amsmath}
+\usepgflibrary{shapes.geometric}
+\usetikzlibrary{calc,arrows.meta}
+\pgfplotsset{my style/.append style={
+axis line style={-Latex,line width=1pt}, 
+axis lines=middle, 
+xlabel={$x$}, ylabel={$y$}, 
+axis equal, grid=both, 
+major grid style={line width=.3pt, draw=black!50}, 
+minor grid style={line width=0.1pt, draw=gray!50}, 
+width=10cm, height=10cm, 
+scale only axis=true, 
+tick label style={font=\small},
+legend style={at={(1,0)},anchor=south east,thick,inner sep=3pt}
+}}
+
+\begin{document}
+\begin{tikzpicture} 
+
+\begin{axis}[my style, xtick={-6.2832,-4.7124,...,6.2832}, xticklabels={$-2\pi$,$-\frac{3}{2}\pi$,$-\pi$,$-\frac{1}{2}\pi$,$0$,$\frac{1}{2}\pi$,$\pi$,$\frac{3}{2}\pi$,$2\pi$}, ytick={-6,-5,...,6}, xmin=-6.2832, xmax=6.2832, ymin=-6, ymax=6, minor tick num=1,restrict y to domain=-20:20,unbounded coords = jump,samples=250,smooth] 
+
+\addplot[color=red,domain=-2*pi:2*pi,no marks,line width=1pt,samples=300]{tan(deg((1/2)*x))};
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (-pi, -6) (-pi, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (pi, -6) (pi, 6) };
+\addlegendentry{\(f(x)=\tan \frac{1}{2}x\)}
+\end{axis} 
+
+\end{tikzpicture}
+\end{document}
+```
+
+```tikz
+\usepackage{tikz}
+\usepackage{pgfplots,amsmath}
+\usepgflibrary{shapes.geometric}
+\usetikzlibrary{calc,arrows.meta}
+\pgfplotsset{my style/.append style={
+axis line style={-Latex,line width=1pt}, 
+axis lines=middle, 
+xlabel={$x$}, ylabel={$y$}, 
+axis equal, grid=both, 
+major grid style={line width=.3pt, draw=black!50}, 
+minor grid style={line width=0.1pt, draw=gray!50}, 
+width=10cm, height=10cm, 
+scale only axis=true, 
+tick label style={font=\small},
+legend style={at={(1,0)},anchor=south east,thick,inner sep=3pt}
+}}
+
+\begin{document}
+\begin{tikzpicture} 
+
+\begin{axis}[my style, xtick={-6.2832,-4.7124,...,6.2832}, xticklabels={$-2\pi$,$-\frac{3}{2}\pi$,$-\pi$,$-\frac{1}{2}\pi$,$0$,$\frac{1}{2}\pi$,$\pi$,$\frac{3}{2}\pi$,$2\pi$}, ytick={-6,-5,...,6}, xmin=-6.2832, xmax=6.2832, ymin=-6, ymax=6, minor tick num=1,restrict y to domain=-20:20,unbounded coords = jump,samples=250,smooth] 
+
+\addplot[color=green,domain=-2*pi:2*pi,no marks,line width=1pt]{(tan(deg(-x))};
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (-(3/2)*pi, -6) (-(3/2)*pi, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (-(1/2)*pi, -6) (-(1/2)*pi, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { ((3/2)*pi, -6) ((3/2)*pi, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { ((1/2)*pi, -6) ((1/2)*pi, 6) };
+\addlegendentry{\(f(x)=\tan -x\)}
+\end{axis} 
+
+\end{tikzpicture}
+\end{document}
+```
+
+Variating ${}C{}$:
+
+```tikz
+\usepackage{tikz}
+\usepackage{pgfplots,amsmath}
+\usepgflibrary{shapes.geometric}
+\usetikzlibrary{calc,arrows.meta}
+\pgfplotsset{my style/.append style={
+axis line style={-Latex,line width=1pt}, 
+axis lines=middle, 
+xlabel={$x$}, ylabel={$y$}, 
+axis equal, grid=both, 
+major grid style={line width=.3pt, draw=black!50}, 
+minor grid style={line width=0.1pt, draw=gray!50}, 
+width=10cm, height=10cm, 
+scale only axis=true, 
+tick label style={font=\small},
+legend style={at={(1,0)},anchor=south east,thick,inner sep=3pt}
+}}
+
+\begin{document}
+\begin{tikzpicture} 
+
+\begin{axis}[my style, xtick={-6.2832,-4.7124,...,6.2832}, xticklabels={$-2\pi$,$-\frac{3}{2}\pi$,$-\pi$,$-\frac{1}{2}\pi$,$0$,$\frac{1}{2}\pi$,$\pi$,$\frac{3}{2}\pi$,$2\pi$}, ytick={-6,-5,...,6}, xmin=-6.2832, xmax=6.2832, ymin=-6, ymax=6, minor tick num=1,restrict y to domain=-20:20,unbounded coords = jump,samples=250,smooth] 
+
+\addplot[color=blue,domain=-2*pi:2*pi,no marks,line width=1pt]{tan(deg(x+1))};
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (-(3/2)*pi-1, -6) (-(3/2)*pi-1, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (-(1/2)*pi-1, -6) (-(1/2)*pi-1, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { ((3/2)*pi-1, -6) ((3/2)*pi-1, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { ((1/2)*pi-1, -6) ((1/2)*pi-1, 6) };
+\addlegendentry{\(f(x)=\tan (x+1)\)}
+\end{axis} 
+
+\end{tikzpicture}
+\end{document}
+```
+
+```tikz
+\usepackage{tikz}
+\usepackage{pgfplots,amsmath}
+\usepgflibrary{shapes.geometric}
+\usetikzlibrary{calc,arrows.meta}
+\pgfplotsset{my style/.append style={
+axis line style={-Latex,line width=1pt}, 
+axis lines=middle, 
+xlabel={$x$}, ylabel={$y$}, 
+axis equal, grid=both, 
+major grid style={line width=.3pt, draw=black!50}, 
+minor grid style={line width=0.1pt, draw=gray!50}, 
+width=10cm, height=10cm, 
+scale only axis=true, 
+tick label style={font=\small},
+legend style={at={(1,0)},anchor=south east,thick,inner sep=3pt}
+}}
+
+\begin{document}
+\begin{tikzpicture} 
+
+\begin{axis}[my style, xtick={-6.2832,-4.7124,...,6.2832}, xticklabels={$-2\pi$,$-\frac{3}{2}\pi$,$-\pi$,$-\frac{1}{2}\pi$,$0$,$\frac{1}{2}\pi$,$\pi$,$\frac{3}{2}\pi$,$2\pi$}, ytick={-6,-5,...,6}, xmin=-6.2832, xmax=6.2832, ymin=-6, ymax=6, minor tick num=1,restrict y to domain=-20:20,unbounded coords = jump,samples=250,smooth] 
+
+\addplot[color=red,domain=-2*pi:2*pi,no marks,line width=1pt,samples=300]{tan(deg(x-1))};
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (-(3/2)*pi+1, -6) (-(3/2)*pi+1, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (-(1/2)*pi+1, -6) (-(1/2)*pi+1, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { ((3/2)*pi+1, -6) ((3/2)*pi+1, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { ((1/2)*pi+1, -6) ((1/2)*pi+1, 6) };
+\addlegendentry{\(f(x)=\tan (x-1)\)}
+\end{axis} 
+
+\end{tikzpicture}
+\end{document}
+```
+
+Variating ${}D{}$:
+
+```tikz
+\usepackage{tikz}
+\usepackage{pgfplots,amsmath}
+\usepgflibrary{shapes.geometric}
+\usetikzlibrary{calc,arrows.meta}
+\pgfplotsset{my style/.append style={
+axis line style={-Latex,line width=1pt}, 
+axis lines=middle, 
+xlabel={$x$}, ylabel={$y$}, 
+axis equal, grid=both, 
+major grid style={line width=.3pt, draw=black!50}, 
+minor grid style={line width=0.1pt, draw=gray!50}, 
+width=10cm, height=10cm, 
+scale only axis=true, 
+tick label style={font=\small},
+legend style={at={(1,0)},anchor=south east,thick,inner sep=3pt}
+}}
+
+\begin{document}
+\begin{tikzpicture} 
+
+\begin{axis}[my style, xtick={-6.2832,-4.7124,...,6.2832}, xticklabels={$-2\pi$,$-\frac{3}{2}\pi$,$-\pi$,$-\frac{1}{2}\pi$,$0$,$\frac{1}{2}\pi$,$\pi$,$\frac{3}{2}\pi$,$2\pi$}, ytick={-6,-5,...,6}, xmin=-6.2832, xmax=6.2832, ymin=-6, ymax=6, minor tick num=1,restrict y to domain=-20:20,unbounded coords = jump,samples=250,smooth] 
+
+\addplot[color=blue,domain=-2*pi:2*pi,no marks,line width=1pt]{tan(deg(x+1))+1};
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (-(3/4)*pi, -6) (-(3/4)*pi, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { ((1/4)*pi, -6) ((1/4)*pi, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (-(7/4)*pi, -6) (-(7/4)*pi, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { ((5/4)*pi, -6) ((5/4)*pi, 6) };
+\addlegendentry{\(f(x)=\tan (x)+1\)}
+\end{axis} 
+
+\end{tikzpicture}
+\end{document}
+```
+
+```tikz
+\usepackage{tikz}
+\usepackage{pgfplots,amsmath}
+\usepgflibrary{shapes.geometric}
+\usetikzlibrary{calc,arrows.meta}
+\pgfplotsset{my style/.append style={
+axis line style={-Latex,line width=1pt}, 
+axis lines=middle, 
+xlabel={$x$}, ylabel={$y$}, 
+axis equal, grid=both, 
+major grid style={line width=.3pt, draw=black!50}, 
+minor grid style={line width=0.1pt, draw=gray!50}, 
+width=10cm, height=10cm, 
+scale only axis=true, 
+tick label style={font=\small},
+legend style={at={(1,0)},anchor=south east,thick,inner sep=3pt}
+}}
+
+\begin{document}
+\begin{tikzpicture} 
+
+\begin{axis}[my style, xtick={-6.2832,-4.7124,...,6.2832}, xticklabels={$-2\pi$,$-\frac{3}{2}\pi$,$-\pi$,$-\frac{1}{2}\pi$,$0$,$\frac{1}{2}\pi$,$\pi$,$\frac{3}{2}\pi$,$2\pi$}, ytick={-6,-5,...,6}, xmin=-6.2832, xmax=6.2832, ymin=-6, ymax=6, minor tick num=1,restrict y to domain=-20:20,unbounded coords = jump,samples=250,smooth] 
+
+\addplot[color=red,domain=-2*pi:2*pi,no marks,line width=1pt,samples=300]{tan(deg(x))-1};
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (-(3/2)*pi, -6) (-(3/2)*pi, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (-(1/2)*pi, -6) (-(1/2)*pi, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { ((3/2)*pi, -6) ((3/2)*pi, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { ((1/2)*pi, -6) ((1/2)*pi, 6) };
+\addlegendentry{\(f(x)=\tan (x)-1\)}
+\end{axis} 
+
+\end{tikzpicture}
+\end{document}
+```
+
 ### Cotangent function
 
 $$
-y=\frac{A\cos(Bx+C)+D}{A\sin(Bx+C)+D}
+y=\frac{A\cos(Bx+C)+D}{A\sin(Bx+C)+D}=A\cot(Bx-C)+D
 $$
 
 ```tikz
@@ -708,9 +965,12 @@ legend style={at={(1,0)},anchor=south east,thick,inner sep=3pt}
 \begin{document}
 \begin{tikzpicture} 
 
-\begin{axis}[my style, xtick={-6.2832,-4.7124,...,6.2832}, xticklabels={$-2\pi$,$-\frac{3}{2}\pi$,$-\pi$,$-\frac{1}{2}\pi$,$0$,$\frac{1}{2}\pi$,$\pi$,$\frac{3}{2}\pi$,$2\pi$}, ytick={-6,-5,...,6}, xmin=-6.2832, xmax=6.2832, ymin=-6, ymax=6, minor tick num=1,,restrict y to domain=-15.75:15.75,unbounded coords = jump,samples=200,smooth]  
+\begin{axis}[my style, xtick={-6.2832,-4.7124,...,6.2832}, xticklabels={$-2\pi$,$-\frac{3}{2}\pi$,$-\pi$,$-\frac{1}{2}\pi$,$0$,$\frac{1}{2}\pi$,$\pi$,$\frac{3}{2}\pi$,$2\pi$}, ytick={-6,-5,...,6}, xmin=-6.2832, xmax=6.2832, ymin=-6, ymax=6, minor tick num=1,restrict y to domain=-20:20,unbounded coords = jump,samples=200,smooth]  
 
-\addplot[color=green,samples=100,domain=-2*pi:2*pi,no marks,line width=1pt]{1/(tan(deg(x)))};
+\addplot[color=green,domain=-2*pi:2*pi,no marks,line width=1pt]{1/(tan(deg(x)))};
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (-pi, -6) (-pi, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (0, -6) (0, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (pi, -6) (pi, 6) };
 \addlegendentry{\(f(x)=\cot x\)}
 \end{axis} 
 
@@ -718,12 +978,14 @@ legend style={at={(1,0)},anchor=south east,thick,inner sep=3pt}
 \end{document}
 ```
 
-The function is asymptotic to all ${}x=k\pi{}$
-${}D=\mathbb{R}\setminus \left\{  k\pi:k \in \mathbb{Z}  \right\}{}$
+The function is asymptotic to all ${}x=\frac{k\pi}{B}+C{}$
+${}D=\mathbb{R}\setminus \left\{  \frac{k\pi}{B}+C:k \in \mathbb{Z}  \right\}{}$
 ${}R=\mathbb{R}{}$
-Its period is ${}\pi{}$
+Period: ${}| \frac{\pi}{B} |{}$
+Phase Shift: ${}|\frac{C}{B}|{}$
+Vertical Translation: ${}|D|{}$ units up if ${}D>0{}$ or ${}|D|{}$ units down if ${}D<0{}$
 
-### Secant function
+Variating ${}A{}$:
 
 ```tikz
 \usepackage{tikz}
@@ -746,9 +1008,305 @@ legend style={at={(1,0)},anchor=south east,thick,inner sep=3pt}
 \begin{document}
 \begin{tikzpicture} 
 
-\begin{axis}[my style, xtick={-6.2832,-4.7124,...,6.2832}, xticklabels={$-2\pi$,$-\frac{3}{2}\pi$,$-\pi$,$-\frac{1}{2}\pi$,$0$,$\frac{1}{2}\pi$,$\pi$,$\frac{3}{2}\pi$,$2\pi$}, ytick={-6,-5,...,6}, xmin=-6.2832, xmax=6.2832, ymin=-6, ymax=6, minor tick num=1] 
+\begin{axis}[my style, xtick={-6.2832,-4.7124,...,6.2832}, xticklabels={$-2\pi$,$-\frac{3}{2}\pi$,$-\pi$,$-\frac{1}{2}\pi$,$0$,$\frac{1}{2}\pi$,$\pi$,$\frac{3}{2}\pi$,$2\pi$}, ytick={-6,-5,...,6}, xmin=-6.2832, xmax=6.2832, ymin=-6, ymax=6, minor tick num=1,restrict y to domain=-20:20,unbounded coords = jump,samples=200,smooth] 
 
-\addplot[color=green,samples=200,domain=-2*pi:2*pi,no marks,line width=1pt]{1/(cos(deg(x))};
+\addplot[color=blue,domain=-2*pi:2*pi,no marks,line width=1pt]{1/(2*tan(deg(x)))};
+\addplot[color=red,domain=-2*pi:2*pi,no marks,line width=1pt,samples=300]{1/((1/2)*tan(deg(x)))};
+\addplot[color=green,domain=-2*pi:2*pi,no marks,line width=1pt]{1/(-tan(deg(x)))};
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (-pi, -6) (-pi, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (0, -6) (0, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (pi, -6) (pi, 6) };
+\addlegendentry{\(f(x)=2 \cot x\)}
+\addlegendentry{\(f(x)=\frac{1}{2} \cot x\)}
+\addlegendentry{\(f(x)=-\cot x\)}
+\end{axis} 
+
+\end{tikzpicture}
+\end{document}
+```
+
+Variating ${}B{}$:
+
+```tikz
+\usepackage{tikz}
+\usepackage{pgfplots,amsmath}
+\usepgflibrary{shapes.geometric}
+\usetikzlibrary{calc,arrows.meta}
+\pgfplotsset{my style/.append style={
+axis line style={-Latex,line width=1pt}, 
+axis lines=middle, 
+xlabel={$x$}, ylabel={$y$}, 
+axis equal, grid=both, 
+major grid style={line width=.3pt, draw=black!50}, 
+minor grid style={line width=0.1pt, draw=gray!50}, 
+width=10cm, height=10cm, 
+scale only axis=true, 
+tick label style={font=\small},
+legend style={at={(1,0)},anchor=south east,thick,inner sep=3pt}
+}}
+
+\begin{document}
+\begin{tikzpicture} 
+
+\begin{axis}[my style, xtick={-6.2832,-4.7124,...,6.2832}, xticklabels={$-2\pi$,$-\frac{3}{2}\pi$,$-\pi$,$-\frac{1}{2}\pi$,$0$,$\frac{1}{2}\pi$,$\pi$,$\frac{3}{2}\pi$,$2\pi$}, ytick={-6,-5,...,6}, xmin=-6.2832, xmax=6.2832, ymin=-6, ymax=6, minor tick num=1,restrict y to domain=-20:20,unbounded coords = jump,samples=250,smooth] 
+
+\addplot[color=blue,domain=-2*pi:2*pi,no marks,line width=1pt]{1/(tan(deg(2*x)))};
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (-(3/2)*pi, -6) (-(3/2)*pi, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (-pi, -6) (-pi, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { ((3/2)*pi, -6) ((3/2)*pi, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (pi, -6) (pi, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (-(1/2)*pi, -6) (-(1/2)*pi, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (0, -6) (0, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { ((1/2)*pi, -6) ((1/2)*pi, 6) };
+\addlegendentry{\(f(x)=\cot 2x\)}
+\end{axis} 
+
+\end{tikzpicture}
+\end{document}
+```
+
+```tikz
+\usepackage{tikz}
+\usepackage{pgfplots,amsmath}
+\usepgflibrary{shapes.geometric}
+\usetikzlibrary{calc,arrows.meta}
+\pgfplotsset{my style/.append style={
+axis line style={-Latex,line width=1pt}, 
+axis lines=middle, 
+xlabel={$x$}, ylabel={$y$}, 
+axis equal, grid=both, 
+major grid style={line width=.3pt, draw=black!50}, 
+minor grid style={line width=0.1pt, draw=gray!50}, 
+width=10cm, height=10cm, 
+scale only axis=true, 
+tick label style={font=\small},
+legend style={at={(1,0)},anchor=south east,thick,inner sep=3pt}
+}}
+
+\begin{document}
+\begin{tikzpicture} 
+
+\begin{axis}[my style, xtick={-6.2832,-4.7124,...,6.2832}, xticklabels={$-2\pi$,$-\frac{3}{2}\pi$,$-\pi$,$-\frac{1}{2}\pi$,$0$,$\frac{1}{2}\pi$,$\pi$,$\frac{3}{2}\pi$,$2\pi$}, ytick={-6,-5,...,6}, xmin=-6.2832, xmax=6.2832, ymin=-6, ymax=6, minor tick num=1,restrict y to domain=-20:20,unbounded coords = jump,samples=250,smooth] 
+
+\addplot[color=red,domain=-2*pi:2*pi,no marks,line width=1pt,samples=300]{1/(tan(deg((1/2)*x)))};
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (0, -6) (0, 6) };
+\addlegendentry{\(f(x)=\cot \frac{1}{2}x\)}
+\end{axis} 
+
+\end{tikzpicture}
+\end{document}
+```
+
+```tikz
+\usepackage{tikz}
+\usepackage{pgfplots,amsmath}
+\usepgflibrary{shapes.geometric}
+\usetikzlibrary{calc,arrows.meta}
+\pgfplotsset{my style/.append style={
+axis line style={-Latex,line width=1pt}, 
+axis lines=middle, 
+xlabel={$x$}, ylabel={$y$}, 
+axis equal, grid=both, 
+major grid style={line width=.3pt, draw=black!50}, 
+minor grid style={line width=0.1pt, draw=gray!50}, 
+width=10cm, height=10cm, 
+scale only axis=true, 
+tick label style={font=\small},
+legend style={at={(1,0)},anchor=south east,thick,inner sep=3pt}
+}}
+
+\begin{document}
+\begin{tikzpicture} 
+
+\begin{axis}[my style, xtick={-6.2832,-4.7124,...,6.2832}, xticklabels={$-2\pi$,$-\frac{3}{2}\pi$,$-\pi$,$-\frac{1}{2}\pi$,$0$,$\frac{1}{2}\pi$,$\pi$,$\frac{3}{2}\pi$,$2\pi$}, ytick={-6,-5,...,6}, xmin=-6.2832, xmax=6.2832, ymin=-6, ymax=6, minor tick num=1,restrict y to domain=-20:20,unbounded coords = jump,samples=250,smooth] 
+
+\addplot[color=green,domain=-2*pi:2*pi,no marks,line width=1pt]{1/(tan(deg(-x)))};
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (-pi, -6) (-pi, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (0, -6) (0, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (pi, -6) (pi, 6) };
+\addlegendentry{\(f(x)=\cot -x\)}
+\end{axis} 
+
+\end{tikzpicture}
+\end{document}
+```
+
+Variating ${}C{}$:
+
+```tikz
+\usepackage{tikz}
+\usepackage{pgfplots,amsmath}
+\usepgflibrary{shapes.geometric}
+\usetikzlibrary{calc,arrows.meta}
+\pgfplotsset{my style/.append style={
+axis line style={-Latex,line width=1pt}, 
+axis lines=middle, 
+xlabel={$x$}, ylabel={$y$}, 
+axis equal, grid=both, 
+major grid style={line width=.3pt, draw=black!50}, 
+minor grid style={line width=0.1pt, draw=gray!50}, 
+width=10cm, height=10cm, 
+scale only axis=true, 
+tick label style={font=\small},
+legend style={at={(1,0)},anchor=south east,thick,inner sep=3pt}
+}}
+
+\begin{document}
+\begin{tikzpicture} 
+
+\begin{axis}[my style, xtick={-6.2832,-4.7124,...,6.2832}, xticklabels={$-2\pi$,$-\frac{3}{2}\pi$,$-\pi$,$-\frac{1}{2}\pi$,$0$,$\frac{1}{2}\pi$,$\pi$,$\frac{3}{2}\pi$,$2\pi$}, ytick={-6,-5,...,6}, xmin=-6.2832, xmax=6.2832, ymin=-6, ymax=6, minor tick num=1,restrict y to domain=-20:20,unbounded coords = jump,samples=250,smooth] 
+
+\addplot[color=blue,domain=-2*pi:2*pi,no marks,line width=1pt]{1/(tan(deg(x+1)))};
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (pi-1, -6) (pi-1, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (-1, -6) (-1, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (2*pi-1, -6) (2*pi-1, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (-pi-1, -6) (-pi-1, 6) };
+\addlegendentry{\(f(x)=\cot (x+1)\)}
+\end{axis} 
+
+\end{tikzpicture}
+\end{document}
+```
+
+```tikz
+\usepackage{tikz}
+\usepackage{pgfplots,amsmath}
+\usepgflibrary{shapes.geometric}
+\usetikzlibrary{calc,arrows.meta}
+\pgfplotsset{my style/.append style={
+axis line style={-Latex,line width=1pt}, 
+axis lines=middle, 
+xlabel={$x$}, ylabel={$y$}, 
+axis equal, grid=both, 
+major grid style={line width=.3pt, draw=black!50}, 
+minor grid style={line width=0.1pt, draw=gray!50}, 
+width=10cm, height=10cm, 
+scale only axis=true, 
+tick label style={font=\small},
+legend style={at={(1,0)},anchor=south east,thick,inner sep=3pt}
+}}
+
+\begin{document}
+\begin{tikzpicture} 
+
+\begin{axis}[my style, xtick={-6.2832,-4.7124,...,6.2832}, xticklabels={$-2\pi$,$-\frac{3}{2}\pi$,$-\pi$,$-\frac{1}{2}\pi$,$0$,$\frac{1}{2}\pi$,$\pi$,$\frac{3}{2}\pi$,$2\pi$}, ytick={-6,-5,...,6}, xmin=-6.2832, xmax=6.2832, ymin=-6, ymax=6, minor tick num=1,restrict y to domain=-20:20,unbounded coords = jump,samples=250,smooth] 
+
+\addplot[color=red,domain=-2*pi:2*pi,no marks,line width=1pt,samples=300]{1/(tan(deg(x-1)))};
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (pi+1, -6) (pi+1, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (1, -6) (1, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (-2*pi+1, -6) (-2*pi+1, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (-pi+1, -6) (-pi+1, 6) };
+\addlegendentry{\(f(x)=\tan (x-1)\)}
+\end{axis} 
+
+\end{tikzpicture}
+\end{document}
+```
+
+Variating ${}D{}$:
+
+```tikz
+\usepackage{tikz}
+\usepackage{pgfplots,amsmath}
+\usepgflibrary{shapes.geometric}
+\usetikzlibrary{calc,arrows.meta}
+\pgfplotsset{my style/.append style={
+axis line style={-Latex,line width=1pt}, 
+axis lines=middle, 
+xlabel={$x$}, ylabel={$y$}, 
+axis equal, grid=both, 
+major grid style={line width=.3pt, draw=black!50}, 
+minor grid style={line width=0.1pt, draw=gray!50}, 
+width=10cm, height=10cm, 
+scale only axis=true, 
+tick label style={font=\small},
+legend style={at={(1,0)},anchor=south east,thick,inner sep=3pt}
+}}
+
+\begin{document}
+\begin{tikzpicture} 
+
+\begin{axis}[my style, xtick={-6.2832,-4.7124,...,6.2832}, xticklabels={$-2\pi$,$-\frac{3}{2}\pi$,$-\pi$,$-\frac{1}{2}\pi$,$0$,$\frac{1}{2}\pi$,$\pi$,$\frac{3}{2}\pi$,$2\pi$}, ytick={-6,-5,...,6}, xmin=-6.2832, xmax=6.2832, ymin=-6, ymax=6, minor tick num=1,restrict y to domain=-20:20,unbounded coords = jump,samples=250,smooth] 
+
+\addplot[color=blue,domain=-2*pi:2*pi,no marks,line width=1pt]{1/(tan(deg(x)))+1};
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (-pi, -6) (-pi, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (0, -6) (0, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (pi, -6) (pi, 6) };
+\addlegendentry{\(f(x)=\cot (x)+1\)}
+\end{axis} 
+
+\end{tikzpicture}
+\end{document}
+```
+
+```tikz
+\usepackage{tikz}
+\usepackage{pgfplots,amsmath}
+\usepgflibrary{shapes.geometric}
+\usetikzlibrary{calc,arrows.meta}
+\pgfplotsset{my style/.append style={
+axis line style={-Latex,line width=1pt}, 
+axis lines=middle, 
+xlabel={$x$}, ylabel={$y$}, 
+axis equal, grid=both, 
+major grid style={line width=.3pt, draw=black!50}, 
+minor grid style={line width=0.1pt, draw=gray!50}, 
+width=10cm, height=10cm, 
+scale only axis=true, 
+tick label style={font=\small},
+legend style={at={(1,0)},anchor=south east,thick,inner sep=3pt}
+}}
+
+\begin{document}
+\begin{tikzpicture} 
+
+\begin{axis}[my style, xtick={-6.2832,-4.7124,...,6.2832}, xticklabels={$-2\pi$,$-\frac{3}{2}\pi$,$-\pi$,$-\frac{1}{2}\pi$,$0$,$\frac{1}{2}\pi$,$\pi$,$\frac{3}{2}\pi$,$2\pi$}, ytick={-6,-5,...,6}, xmin=-6.2832, xmax=6.2832, ymin=-6, ymax=6, minor tick num=1,restrict y to domain=-20:20,unbounded coords = jump,samples=250,smooth] 
+
+\addplot[color=red,domain=-2*pi:2*pi,no marks,line width=1pt,samples=300]{1/(tan(deg(x)))-1};
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (-pi, -6) (-pi, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (0, -6) (0, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (pi, -6) (pi, 6) };
+\addlegendentry{\(f(x)=\cot (x)-1\)}
+\end{axis} 
+
+\end{tikzpicture}
+\end{document}
+```
+
+### Secant function
+
+$$
+y=\frac{1}{A\cos(Bx-C)}+D=A\sec(Bx-C)+D
+$$
+
+```tikz
+\usepackage{tikz}
+\usepackage{pgfplots,amsmath}
+\usepgflibrary{shapes.geometric}
+\usetikzlibrary{calc,arrows.meta}
+\pgfplotsset{my style/.append style={
+axis line style={-Latex,line width=1pt}, 
+axis lines=middle, 
+xlabel={$x$}, ylabel={$y$}, 
+axis equal, grid=both, 
+major grid style={line width=.3pt, draw=black!50}, 
+minor grid style={line width=0.1pt, draw=gray!50}, 
+width=10cm, height=10cm, 
+scale only axis=true, 
+tick label style={font=\small},
+legend style={at={(1,0)},anchor=south east,thick,inner sep=3pt}
+}}
+
+\begin{document}
+\begin{tikzpicture} 
+
+\begin{axis}[my style, xtick={-6.2832,-4.7124,...,6.2832}, xticklabels={$-2\pi$,$-\frac{3}{2}\pi$,$-\pi$,$-\frac{1}{2}\pi$,$0$,$\frac{1}{2}\pi$,$\pi$,$\frac{3}{2}\pi$,$2\pi$}, ytick={-6,-5,...,6}, xmin=-6.2832, xmax=6.2832, ymin=-6, ymax=6, minor tick num=1,restrict y to domain=-15.75:15.75,unbounded coords = jump,samples=200,smooth] 
+
+\addplot[color=green,domain=-2*pi:2*pi,no marks,line width=1pt]{1/(cos(deg(x))};
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (-(3/2)*pi, -6) (-(3/2)*pi, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (-(1/2)*pi, -6) (-(1/2)*pi, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { ((3/2)*pi, -6) ((3/2)*pi, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { ((1/2)*pi, -6) ((1/2)*pi, 6) };
 \addlegendentry{\(f(x)=sec x\)}
 \end{axis} 
 
@@ -756,10 +1314,14 @@ legend style={at={(1,0)},anchor=south east,thick,inner sep=3pt}
 \end{document}
 ```
 
-The function is asymptotic to all ${}x=\frac{(2k+1)\pi}{2}{}$
-${}D=\mathbb{R}\setminus \left\{  \frac{(2k+1)\pi}{2}:k \in \mathbb{Z}  \right\}{}$
+The function is asymptotic to all ${}x=\frac{(2k+1)\pi}{2B}{}$
+${}D=\mathbb{R}\setminus \left\{  \frac{(2k+1)\pi}{2B}:k \in \mathbb{Z}  \right\}{}$
 ${}R=(-\infty,-A)\cup(A,\infty){}$
-Its period is ${}2\pi{}$
+Period: ${}\frac{2\pi}{B}{}$
+Phase Shift: ${}|\frac{C}{B}|{}$
+Vertical Translation: ${}|D|{}$ units up if ${}D>0{}$ or ${}|D|{}$ units down if ${}D<0{}$
+
+Variating ${}|A|{}$:
 
 ```tikz
 \usepackage{tikz}
@@ -782,14 +1344,271 @@ legend style={at={(1,0)},anchor=south east,thick,inner sep=3pt}
 \begin{document}
 \begin{tikzpicture} 
 
-\begin{axis}[my style, xtick={-6.2832,-4.7124,...,6.2832}, xticklabels={$-2\pi$,$-\frac{3}{2}\pi$,$-\pi$,$-\frac{1}{2}\pi$,$0$,$\frac{1}{2}\pi$,$\pi$,$\frac{3}{2}\pi$,$2\pi$}, ytick={-6,-5,...,6}, xmin=-6.2832, xmax=6.2832, ymin=-6, ymax=6, minor tick num=1] 
+\begin{axis}[my style, xtick={-6.2832,-4.7124,...,6.2832}, xticklabels={$-2\pi$,$-\frac{3}{2}\pi$,$-\pi$,$-\frac{1}{2}\pi$,$0$,$\frac{1}{2}\pi$,$\pi$,$\frac{3}{2}\pi$,$2\pi$}, ytick={-6,-5,...,6}, xmin=-6.2832, xmax=6.2832, ymin=-6, ymax=6, minor tick num=1,restrict y to domain=-20:20,unbounded coords = jump,samples=250,smooth] 
 
-\addplot[color=red,samples=200,domain=-2*pi:2*pi,no marks,line width=1pt]{2*(1/(cos(deg(x)))};
-\addplot[color=blue,samples=200,domain=-2*pi:2*pi,no marks,line width=1pt]{(1/2)*(1/(cos(deg(x)))};
-\addplot[color=green,samples=200,domain=-2*pi:2*pi,no marks,line width=1pt]{-(1/(cos(deg(x)))};
+\addplot[color=red,domain=-2*pi:2*pi,no marks,line width=1pt]{2*(1/(cos(deg(x)))};
+\addplot[color=blue,domain=-2*pi:2*pi,no marks,line width=1pt]{(1/2)*(1/(cos(deg(x)))};
+\addplot[color=green,domain=-2*pi:2*pi,no marks,line width=1pt]{-(1/(cos(deg(x)))};
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (-(3/2)*pi, -6) (-(3/2)*pi, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (-(1/2)*pi, -6) (-(1/2)*pi, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { ((3/2)*pi, -6) ((3/2)*pi, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { ((1/2)*pi, -6) ((1/2)*pi, 6) };
 \addlegendentry{\(f(x)=2 \sec x\)}
 \addlegendentry{\(f(x)=\frac{1}{2}\sec x\)}
 \addlegendentry{\(f(x)=- \sec x\)}
+\end{axis} 
+
+\end{tikzpicture}
+\end{document}
+```
+
+Variating ${}B{}$:
+
+```tikz
+\usepackage{tikz}
+\usepackage{pgfplots,amsmath}
+\usepgflibrary{shapes.geometric}
+\usetikzlibrary{calc,arrows.meta}
+\pgfplotsset{my style/.append style={
+axis line style={-Latex,line width=1pt}, 
+axis lines=middle, 
+xlabel={$x$}, ylabel={$y$}, 
+axis equal, grid=both, 
+major grid style={line width=.3pt, draw=black!50}, 
+minor grid style={line width=0.1pt, draw=gray!50}, 
+width=10cm, height=10cm, 
+scale only axis=true, 
+tick label style={font=\small},
+legend style={at={(1,0)},anchor=south east,thick,inner sep=3pt}
+}}
+
+\begin{document}
+\begin{tikzpicture} 
+
+\begin{axis}[my style, xtick={-6.2832,-4.7124,...,6.2832}, xticklabels={$-2\pi$,$-\frac{3}{2}\pi$,$-\pi$,$-\frac{1}{2}\pi$,$0$,$\frac{1}{2}\pi$,$\pi$,$\frac{3}{2}\pi$,$2\pi$}, ytick={-6,-5,...,6}, xmin=-6.2832, xmax=6.2832, ymin=-6, ymax=6, minor tick num=1,restrict y to domain=-20:20,unbounded coords = jump,samples=250,smooth] 
+
+\addplot[color=blue,domain=-2*pi:2*pi,no marks,line width=1pt]{1/(cos(deg(2*x)))};
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (-(7/4)*pi, -6) (-(7/4)*pi, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (-(5/4)*pi, -6) (-(5/4)*pi, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (-(3/4)*pi, -6) (-(3/4)*pi, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (-(1/4)*pi, -6) (-(1/4)*pi, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { ((1/4)*pi, -6) ((1/4)*pi, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { ((3/4)*pi, -6) ((3/4)*pi, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { ((5/4)*pi, -6) ((5/4)*pi, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { ((7/4)*pi, -6) ((7/4)*pi, 6) };
+\addlegendentry{\(f(x)=\sec 2x\)}
+\end{axis} 
+
+\end{tikzpicture}
+\end{document}
+```
+
+```tikz
+\usepackage{tikz}
+\usepackage{pgfplots,amsmath}
+\usepgflibrary{shapes.geometric}
+\usetikzlibrary{calc,arrows.meta}
+\pgfplotsset{my style/.append style={
+axis line style={-Latex,line width=1pt}, 
+axis lines=middle, 
+xlabel={$x$}, ylabel={$y$}, 
+axis equal, grid=both, 
+major grid style={line width=.3pt, draw=black!50}, 
+minor grid style={line width=0.1pt, draw=gray!50}, 
+width=10cm, height=10cm, 
+scale only axis=true, 
+tick label style={font=\small},
+legend style={at={(1,0)},anchor=south east,thick,inner sep=3pt}
+}}
+
+\begin{document}
+\begin{tikzpicture} 
+
+\begin{axis}[my style, xtick={-6.2832,-4.7124,...,6.2832}, xticklabels={$-2\pi$,$-\frac{3}{2}\pi$,$-\pi$,$-\frac{1}{2}\pi$,$0$,$\frac{1}{2}\pi$,$\pi$,$\frac{3}{2}\pi$,$2\pi$}, ytick={-6,-5,...,6}, xmin=-6.2832, xmax=6.2832, ymin=-6, ymax=6, minor tick num=1,restrict y to domain=-20:20,unbounded coords = jump,samples=250,smooth] 
+
+\addplot[color=red,domain=-2*pi:2*pi,no marks,line width=1pt,samples=300]{1/(cos(deg((1/2)*x)))};
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (-pi, -6) (-pi, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (pi, -6) (pi, 6) };
+\addlegendentry{\(f(x)=\sec \frac{1}{2}x\)}
+\end{axis} 
+
+\end{tikzpicture}
+\end{document}
+```
+
+```tikz
+\usepackage{tikz}
+\usepackage{pgfplots,amsmath}
+\usepgflibrary{shapes.geometric}
+\usetikzlibrary{calc,arrows.meta}
+\pgfplotsset{my style/.append style={
+axis line style={-Latex,line width=1pt}, 
+axis lines=middle, 
+xlabel={$x$}, ylabel={$y$}, 
+axis equal, grid=both, 
+major grid style={line width=.3pt, draw=black!50}, 
+minor grid style={line width=0.1pt, draw=gray!50}, 
+width=10cm, height=10cm, 
+scale only axis=true, 
+tick label style={font=\small},
+legend style={at={(1,0)},anchor=south east,thick,inner sep=3pt}
+}}
+
+\begin{document}
+\begin{tikzpicture} 
+
+\begin{axis}[my style, xtick={-6.2832,-4.7124,...,6.2832}, xticklabels={$-2\pi$,$-\frac{3}{2}\pi$,$-\pi$,$-\frac{1}{2}\pi$,$0$,$\frac{1}{2}\pi$,$\pi$,$\frac{3}{2}\pi$,$2\pi$}, ytick={-6,-5,...,6}, xmin=-6.2832, xmax=6.2832, ymin=-6, ymax=6, minor tick num=1,restrict y to domain=-20:20,unbounded coords = jump,samples=250,smooth] 
+
+\addplot[color=green,domain=-2*pi:2*pi,no marks,line width=1pt]{1/(cos(deg(-x)))};
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (-(3/2)*pi, -6) (-(3/2)*pi, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (-(1/2)*pi, -6) (-(1/2)*pi, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { ((3/2)*pi, -6) ((3/2)*pi, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { ((1/2)*pi, -6) ((1/2)*pi, 6) };
+\addlegendentry{\(f(x)=\sec -x\)}
+\end{axis} 
+
+\end{tikzpicture}
+\end{document}
+```
+
+Variating ${}C{}$:
+
+```tikz
+\usepackage{tikz}
+\usepackage{pgfplots,amsmath}
+\usepgflibrary{shapes.geometric}
+\usetikzlibrary{calc,arrows.meta}
+\pgfplotsset{my style/.append style={
+axis line style={-Latex,line width=1pt}, 
+axis lines=middle, 
+xlabel={$x$}, ylabel={$y$}, 
+axis equal, grid=both, 
+major grid style={line width=.3pt, draw=black!50}, 
+minor grid style={line width=0.1pt, draw=gray!50}, 
+width=10cm, height=10cm, 
+scale only axis=true, 
+tick label style={font=\small},
+legend style={at={(1,0)},anchor=south east,thick,inner sep=3pt}
+}}
+
+\begin{document}
+\begin{tikzpicture} 
+
+\begin{axis}[my style, xtick={-6.2832,-4.7124,...,6.2832}, xticklabels={$-2\pi$,$-\frac{3}{2}\pi$,$-\pi$,$-\frac{1}{2}\pi$,$0$,$\frac{1}{2}\pi$,$\pi$,$\frac{3}{2}\pi$,$2\pi$}, ytick={-6,-5,...,6}, xmin=-6.2832, xmax=6.2832, ymin=-6, ymax=6, minor tick num=1,restrict y to domain=-20:20,unbounded coords = jump,samples=250,smooth] 
+
+\addplot[color=blue,domain=-2*pi:2*pi,no marks,line width=1pt]{1/(cos(deg(x+1)))};
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (-(3/2)*pi-1, -6) (-(3/2)*pi-1, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (-(1/2)*pi-1, -6) (-(1/2)*pi-1, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { ((3/2)*pi-1, -6) ((3/2)*pi-1, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { ((1/2)*pi-1, -6) ((1/2)*pi-1, 6) };
+\addlegendentry{\(f(x)=\sec (x+1)\)}
+\end{axis} 
+
+\end{tikzpicture}
+\end{document}
+```
+
+```tikz
+\usepackage{tikz}
+\usepackage{pgfplots,amsmath}
+\usepgflibrary{shapes.geometric}
+\usetikzlibrary{calc,arrows.meta}
+\pgfplotsset{my style/.append style={
+axis line style={-Latex,line width=1pt}, 
+axis lines=middle, 
+xlabel={$x$}, ylabel={$y$}, 
+axis equal, grid=both, 
+major grid style={line width=.3pt, draw=black!50}, 
+minor grid style={line width=0.1pt, draw=gray!50}, 
+width=10cm, height=10cm, 
+scale only axis=true, 
+tick label style={font=\small},
+legend style={at={(1,0)},anchor=south east,thick,inner sep=3pt}
+}}
+
+\begin{document}
+\begin{tikzpicture} 
+
+\begin{axis}[my style, xtick={-6.2832,-4.7124,...,6.2832}, xticklabels={$-2\pi$,$-\frac{3}{2}\pi$,$-\pi$,$-\frac{1}{2}\pi$,$0$,$\frac{1}{2}\pi$,$\pi$,$\frac{3}{2}\pi$,$2\pi$}, ytick={-6,-5,...,6}, xmin=-6.2832, xmax=6.2832, ymin=-6, ymax=6, minor tick num=1,restrict y to domain=-20:20,unbounded coords = jump,samples=250,smooth] 
+
+\addplot[color=red,domain=-2*pi:2*pi,no marks,line width=1pt,samples=300]{1/(cos(deg(x-1)))};
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (-(3/2)*pi+1, -6) (-(3/2)*pi+1, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (-(1/2)*pi+1, -6) (-(1/2)*pi+1, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { ((3/2)*pi+1, -6) ((3/2)*pi+1, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { ((1/2)*pi+1, -6) ((1/2)*pi+1, 6) };
+\addlegendentry{\(f(x)=\sec (x-1)\)}
+\end{axis} 
+
+\end{tikzpicture}
+\end{document}
+```
+
+Variating ${}D{}$:
+
+```tikz
+\usepackage{tikz}
+\usepackage{pgfplots,amsmath}
+\usepgflibrary{shapes.geometric}
+\usetikzlibrary{calc,arrows.meta}
+\pgfplotsset{my style/.append style={
+axis line style={-Latex,line width=1pt}, 
+axis lines=middle, 
+xlabel={$x$}, ylabel={$y$}, 
+axis equal, grid=both, 
+major grid style={line width=.3pt, draw=black!50}, 
+minor grid style={line width=0.1pt, draw=gray!50}, 
+width=10cm, height=10cm, 
+scale only axis=true, 
+tick label style={font=\small},
+legend style={at={(1,0)},anchor=south east,thick,inner sep=3pt}
+}}
+
+\begin{document}
+\begin{tikzpicture} 
+
+\begin{axis}[my style, xtick={-6.2832,-4.7124,...,6.2832}, xticklabels={$-2\pi$,$-\frac{3}{2}\pi$,$-\pi$,$-\frac{1}{2}\pi$,$0$,$\frac{1}{2}\pi$,$\pi$,$\frac{3}{2}\pi$,$2\pi$}, ytick={-6,-5,...,6}, xmin=-6.2832, xmax=6.2832, ymin=-6, ymax=6, minor tick num=1,restrict y to domain=-20:20,unbounded coords = jump,samples=250,smooth] 
+
+\addplot[color=blue,domain=-2*pi:2*pi,no marks,line width=1pt]{1/(cos(deg(x)))+1};
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (-(3/2)*pi, -6) (-(3/2)*pi, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (-(1/2)*pi, -6) (-(1/2)*pi, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { ((3/2)*pi, -6) ((3/2)*pi, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { ((1/2)*pi, -6) ((1/2)*pi, 6) };
+\addlegendentry{\(f(x)=\sec (x)+1\)}
+\end{axis} 
+
+\end{tikzpicture}
+\end{document}
+```
+
+```tikz
+\usepackage{tikz}
+\usepackage{pgfplots,amsmath}
+\usepgflibrary{shapes.geometric}
+\usetikzlibrary{calc,arrows.meta}
+\pgfplotsset{my style/.append style={
+axis line style={-Latex,line width=1pt}, 
+axis lines=middle, 
+xlabel={$x$}, ylabel={$y$}, 
+axis equal, grid=both, 
+major grid style={line width=.3pt, draw=black!50}, 
+minor grid style={line width=0.1pt, draw=gray!50}, 
+width=10cm, height=10cm, 
+scale only axis=true, 
+tick label style={font=\small},
+legend style={at={(1,0)},anchor=south east,thick,inner sep=3pt}
+}}
+
+\begin{document}
+\begin{tikzpicture} 
+
+\begin{axis}[my style, xtick={-6.2832,-4.7124,...,6.2832}, xticklabels={$-2\pi$,$-\frac{3}{2}\pi$,$-\pi$,$-\frac{1}{2}\pi$,$0$,$\frac{1}{2}\pi$,$\pi$,$\frac{3}{2}\pi$,$2\pi$}, ytick={-6,-5,...,6}, xmin=-6.2832, xmax=6.2832, ymin=-6, ymax=6, minor tick num=1,restrict y to domain=-20:20,unbounded coords = jump,samples=250,smooth] 
+
+\addplot[color=red,domain=-2*pi:2*pi,no marks,line width=1pt,samples=300]{1/(cos(deg(x)))-1};
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (-(3/2)*pi, -6) (-(3/2)*pi, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (-(1/2)*pi, -6) (-(1/2)*pi, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { ((3/2)*pi, -6) ((3/2)*pi, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { ((1/2)*pi, -6) ((1/2)*pi, 6) };
+\addlegendentry{\(f(x)=\sec (x)-1\)}
 \end{axis} 
 
 \end{tikzpicture}
@@ -819,9 +1638,12 @@ legend style={at={(1,0)},anchor=south east,thick,inner sep=3pt}
 \begin{document}
 \begin{tikzpicture} 
 
-\begin{axis}[my style, xtick={-6.2832,-4.7124,...,6.2832}, xticklabels={$-2\pi$,$-\frac{3}{2}\pi$,$-\pi$,$-\frac{1}{2}\pi$,$0$,$\frac{1}{2}\pi$,$\pi$,$\frac{3}{2}\pi$,$2\pi$}, ytick={-6,-5,...,6}, xmin=-6.2832, xmax=6.2832, ymin=-6, ymax=6, minor tick num=1] 
+\begin{axis}[my style, xtick={-6.2832,-4.7124,...,6.2832}, xticklabels={$-2\pi$,$-\frac{3}{2}\pi$,$-\pi$,$-\frac{1}{2}\pi$,$0$,$\frac{1}{2}\pi$,$\pi$,$\frac{3}{2}\pi$,$2\pi$}, ytick={-6,-5,...,6}, xmin=-6.2832, xmax=6.2832, ymin=-6, ymax=6, minor tick num=1,restrict y to domain=-15.75:15.75,unbounded coords = jump,samples=200,smooth] 
 
 \addplot+[Latex-Latex,color=green,samples=200,domain=-2*pi:2*pi,no marks,line width=1pt]{1/(sin(deg(x)))};
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (-pi, -6) (-pi, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (0, -6) (0, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (pi, -6) (pi, 6) };
 \addlegendentry{\(f(x)=csc x\)}
 \end{axis} 
 
@@ -829,10 +1651,300 @@ legend style={at={(1,0)},anchor=south east,thick,inner sep=3pt}
 \end{document}
 ```
 
-The function is asymptotic to all ${}x=k\pi{}$
-${}D=\mathbb{R}\setminus \left\{  k\pi:k \in \mathbb{Z}  \right\}{}$
+The function is asymptotic to all ${}x=\frac{k\pi}{B}{}$
+${}D=\mathbb{R}\setminus \left\{  \frac{k\pi}{B}:k \in \mathbb{Z}  \right\}{}$
 ${}R=\mathbb{R}{}$
-Its period is ${}2\pi{}$
+Period: ${}\frac{2\pi}{B}{}$
+Phase Shift: ${}|\frac{C}{B}|{}$
+Vertical Translation: ${}|D|{}$ units up if ${}D>0{}$ or ${}|D|{}$ units down if ${}D<0{}$
+
+Variating ${}|A|{}$:
+
+```tikz
+\usepackage{tikz}
+\usepackage{pgfplots,amsmath}
+\usepgflibrary{shapes.geometric}
+\usetikzlibrary{calc,arrows.meta}
+\pgfplotsset{my style/.append style={
+axis line style={-Latex,line width=1pt}, 
+axis lines=middle, 
+xlabel={$x$}, ylabel={$y$}, 
+axis equal, grid=both, 
+major grid style={line width=.3pt, draw=black!50}, 
+minor grid style={line width=0.1pt, draw=gray!50}, 
+width=10cm, height=10cm, 
+scale only axis=true, 
+tick label style={font=\small},
+legend style={at={(1,0)},anchor=south east,thick,inner sep=3pt}
+}}
+
+\begin{document}
+\begin{tikzpicture} 
+
+\begin{axis}[my style, xtick={-6.2832,-4.7124,...,6.2832}, xticklabels={$-2\pi$,$-\frac{3}{2}\pi$,$-\pi$,$-\frac{1}{2}\pi$,$0$,$\frac{1}{2}\pi$,$\pi$,$\frac{3}{2}\pi$,$2\pi$}, ytick={-6,-5,...,6}, xmin=-6.2832, xmax=6.2832, ymin=-6, ymax=6, minor tick num=1,restrict y to domain=-20:20,unbounded coords = jump,samples=250,smooth] 
+
+\addplot[color=red,domain=-2*pi:2*pi,no marks,line width=1pt]{2*(1/(sin(deg(x)))};
+\addplot[color=blue,domain=-2*pi:2*pi,no marks,line width=1pt]{(1/2)*(1/(sin(deg(x)))};
+\addplot[color=green,domain=-2*pi:2*pi,no marks,line width=1pt]{-(1/(sin(deg(x)))};
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (-pi, -6) (-pi, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (0, -6) (0, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (pi, -6) (pi, 6) };
+\addlegendentry{\(f(x)=2 \csc x\)}
+\addlegendentry{\(f(x)=\frac{1}{2}\csc x\)}
+\addlegendentry{\(f(x)=- \csc x\)}
+\end{axis} 
+
+\end{tikzpicture}
+\end{document}
+```
+
+Variating ${}B{}$:
+
+```tikz
+\usepackage{tikz}
+\usepackage{pgfplots,amsmath}
+\usepgflibrary{shapes.geometric}
+\usetikzlibrary{calc,arrows.meta}
+\pgfplotsset{my style/.append style={
+axis line style={-Latex,line width=1pt}, 
+axis lines=middle, 
+xlabel={$x$}, ylabel={$y$}, 
+axis equal, grid=both, 
+major grid style={line width=.3pt, draw=black!50}, 
+minor grid style={line width=0.1pt, draw=gray!50}, 
+width=10cm, height=10cm, 
+scale only axis=true, 
+tick label style={font=\small},
+legend style={at={(1,0)},anchor=south east,thick,inner sep=3pt}
+}}
+
+\begin{document}
+\begin{tikzpicture} 
+
+\begin{axis}[my style, xtick={-6.2832,-4.7124,...,6.2832}, xticklabels={$-2\pi$,$-\frac{3}{2}\pi$,$-\pi$,$-\frac{1}{2}\pi$,$0$,$\frac{1}{2}\pi$,$\pi$,$\frac{3}{2}\pi$,$2\pi$}, ytick={-6,-5,...,6}, xmin=-6.2832, xmax=6.2832, ymin=-6, ymax=6, minor tick num=1,restrict y to domain=-16:16,unbounded coords = jump,samples=250,smooth] 
+
+\addplot[color=blue,domain=-2*pi:2*pi,no marks,line width=1pt]{1/(sin(deg(2*x)))};
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (-(3/2)*pi, -6) (-(3/2)*pi, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (-pi, -6) (-pi, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (-(1/2)*pi, -6) (-(1/2)*pi, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (0, -6) (0, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { ((1/2)*pi, -6) ((1/2)*pi, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (pi, -6) (pi, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { ((3/2)*pi, -6) ((3/2)*pi, 6) };
+\addlegendentry{\(f(x)=\csc 2x\)}
+\end{axis} 
+
+\end{tikzpicture}
+\end{document}
+```
+
+```tikz
+\usepackage{tikz}
+\usepackage{pgfplots,amsmath}
+\usepgflibrary{shapes.geometric}
+\usetikzlibrary{calc,arrows.meta}
+\pgfplotsset{my style/.append style={
+axis line style={-Latex,line width=1pt}, 
+axis lines=middle, 
+xlabel={$x$}, ylabel={$y$}, 
+axis equal, grid=both, 
+major grid style={line width=.3pt, draw=black!50}, 
+minor grid style={line width=0.1pt, draw=gray!50}, 
+width=10cm, height=10cm, 
+scale only axis=true, 
+tick label style={font=\small},
+legend style={at={(1,0)},anchor=south east,thick,inner sep=3pt}
+}}
+
+\begin{document}
+\begin{tikzpicture} 
+
+\begin{axis}[my style, xtick={-6.2832,-4.7124,...,6.2832}, xticklabels={$-2\pi$,$-\frac{3}{2}\pi$,$-\pi$,$-\frac{1}{2}\pi$,$0$,$\frac{1}{2}\pi$,$\pi$,$\frac{3}{2}\pi$,$2\pi$}, ytick={-6,-5,...,6}, xmin=-6.2832, xmax=6.2832, ymin=-6, ymax=6, minor tick num=1,restrict y to domain=-20:20,unbounded coords = jump,samples=250,smooth] 
+
+\addplot[color=red,domain=-2*pi:2*pi,no marks,line width=1pt,samples=300]{1/(sin(deg((1/2)*x)))};
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (0, -6) (0, 6) };
+\addlegendentry{\(f(x)=\csc \frac{1}{2}x\)}
+\end{axis} 
+
+\end{tikzpicture}
+\end{document}
+```
+
+```tikz
+\usepackage{tikz}
+\usepackage{pgfplots,amsmath}
+\usepgflibrary{shapes.geometric}
+\usetikzlibrary{calc,arrows.meta}
+\pgfplotsset{my style/.append style={
+axis line style={-Latex,line width=1pt}, 
+axis lines=middle, 
+xlabel={$x$}, ylabel={$y$}, 
+axis equal, grid=both, 
+major grid style={line width=.3pt, draw=black!50}, 
+minor grid style={line width=0.1pt, draw=gray!50}, 
+width=10cm, height=10cm, 
+scale only axis=true, 
+tick label style={font=\small},
+legend style={at={(1,0)},anchor=south east,thick,inner sep=3pt}
+}}
+
+\begin{document}
+\begin{tikzpicture} 
+
+\begin{axis}[my style, xtick={-6.2832,-4.7124,...,6.2832}, xticklabels={$-2\pi$,$-\frac{3}{2}\pi$,$-\pi$,$-\frac{1}{2}\pi$,$0$,$\frac{1}{2}\pi$,$\pi$,$\frac{3}{2}\pi$,$2\pi$}, ytick={-6,-5,...,6}, xmin=-6.2832, xmax=6.2832, ymin=-6, ymax=6, minor tick num=1,restrict y to domain=-20:20,unbounded coords = jump,samples=250,smooth] 
+
+\addplot[color=green,domain=-2*pi:2*pi,no marks,line width=1pt]{1/(sin(deg(-x)))};
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (-pi, -6) (-pi, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (0, -6) (0, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (pi, -6) (pi, 6) };
+\addlegendentry{\(f(x)=\csc -x\)}
+\end{axis} 
+
+\end{tikzpicture}
+\end{document}
+```
+
+Variating ${}C{}$:
+
+```tikz
+\usepackage{tikz}
+\usepackage{pgfplots,amsmath}
+\usepgflibrary{shapes.geometric}
+\usetikzlibrary{calc,arrows.meta}
+\pgfplotsset{my style/.append style={
+axis line style={-Latex,line width=1pt}, 
+axis lines=middle, 
+xlabel={$x$}, ylabel={$y$}, 
+axis equal, grid=both, 
+major grid style={line width=.3pt, draw=black!50}, 
+minor grid style={line width=0.1pt, draw=gray!50}, 
+width=10cm, height=10cm, 
+scale only axis=true, 
+tick label style={font=\small},
+legend style={at={(1,0)},anchor=south east,thick,inner sep=3pt}
+}}
+
+\begin{document}
+\begin{tikzpicture} 
+
+\begin{axis}[my style, xtick={-6.2832,-4.7124,...,6.2832}, xticklabels={$-2\pi$,$-\frac{3}{2}\pi$,$-\pi$,$-\frac{1}{2}\pi$,$0$,$\frac{1}{2}\pi$,$\pi$,$\frac{3}{2}\pi$,$2\pi$}, ytick={-6,-5,...,6}, xmin=-6.2832, xmax=6.2832, ymin=-6, ymax=6, minor tick num=1,restrict y to domain=-20:20,unbounded coords = jump,samples=250,smooth] 
+
+\addplot[color=blue,domain=-2*pi:2*pi,no marks,line width=1pt]{1/(sin(deg(x+1)))};
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (-pi-1, -6) (-pi-1, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (-1, -6) (-1, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (pi-1, -6) (pi-1, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (2*pi-1, -6) (2*pi-1, 6) };
+\addlegendentry{\(f(x)=\csc (x+1)\)}
+\end{axis} 
+
+\end{tikzpicture}
+\end{document}
+```
+
+```tikz
+\usepackage{tikz}
+\usepackage{pgfplots,amsmath}
+\usepgflibrary{shapes.geometric}
+\usetikzlibrary{calc,arrows.meta}
+\pgfplotsset{my style/.append style={
+axis line style={-Latex,line width=1pt}, 
+axis lines=middle, 
+xlabel={$x$}, ylabel={$y$}, 
+axis equal, grid=both, 
+major grid style={line width=.3pt, draw=black!50}, 
+minor grid style={line width=0.1pt, draw=gray!50}, 
+width=10cm, height=10cm, 
+scale only axis=true, 
+tick label style={font=\small},
+legend style={at={(1,0)},anchor=south east,thick,inner sep=3pt}
+}}
+
+\begin{document}
+\begin{tikzpicture} 
+
+\begin{axis}[my style, xtick={-6.2832,-4.7124,...,6.2832}, xticklabels={$-2\pi$,$-\frac{3}{2}\pi$,$-\pi$,$-\frac{1}{2}\pi$,$0$,$\frac{1}{2}\pi$,$\pi$,$\frac{3}{2}\pi$,$2\pi$}, ytick={-6,-5,...,6}, xmin=-6.2832, xmax=6.2832, ymin=-6, ymax=6, minor tick num=1,restrict y to domain=-20:20,unbounded coords = jump,samples=250,smooth] 
+
+\addplot[color=red,domain=-2*pi:2*pi,no marks,line width=1pt,samples=300]{1/(sin(deg(x-1)))};
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (-pi+1, -6) (-pi+1, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (1, -6) (1, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (pi+1, -6) (pi+1, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (-2*pi+1, -6) (-2*pi+1, 6) };
+\addlegendentry{\(f(x)=\csc (x-1)\)}
+\end{axis} 
+
+\end{tikzpicture}
+\end{document}
+```
+
+Variating ${}D{}$:
+
+```tikz
+\usepackage{tikz}
+\usepackage{pgfplots,amsmath}
+\usepgflibrary{shapes.geometric}
+\usetikzlibrary{calc,arrows.meta}
+\pgfplotsset{my style/.append style={
+axis line style={-Latex,line width=1pt}, 
+axis lines=middle, 
+xlabel={$x$}, ylabel={$y$}, 
+axis equal, grid=both, 
+major grid style={line width=.3pt, draw=black!50}, 
+minor grid style={line width=0.1pt, draw=gray!50}, 
+width=10cm, height=10cm, 
+scale only axis=true, 
+tick label style={font=\small},
+legend style={at={(1,0)},anchor=south east,thick,inner sep=3pt}
+}}
+
+\begin{document}
+\begin{tikzpicture} 
+
+\begin{axis}[my style, xtick={-6.2832,-4.7124,...,6.2832}, xticklabels={$-2\pi$,$-\frac{3}{2}\pi$,$-\pi$,$-\frac{1}{2}\pi$,$0$,$\frac{1}{2}\pi$,$\pi$,$\frac{3}{2}\pi$,$2\pi$}, ytick={-6,-5,...,6}, xmin=-6.2832, xmax=6.2832, ymin=-6, ymax=6, minor tick num=1,restrict y to domain=-20:20,unbounded coords = jump,samples=250,smooth] 
+
+\addplot[color=blue,domain=-2*pi:2*pi,no marks,line width=1pt]{1/(sin(deg(x)))+1};
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (-pi, -6) (-pi, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (0, -6) (0, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (pi, -6) (pi, 6) };
+\addlegendentry{\(f(x)=\csc (x)+1\)}
+\end{axis} 
+
+\end{tikzpicture}
+\end{document}
+```
+
+```tikz
+\usepackage{tikz}
+\usepackage{pgfplots,amsmath}
+\usepgflibrary{shapes.geometric}
+\usetikzlibrary{calc,arrows.meta}
+\pgfplotsset{my style/.append style={
+axis line style={-Latex,line width=1pt}, 
+axis lines=middle, 
+xlabel={$x$}, ylabel={$y$}, 
+axis equal, grid=both, 
+major grid style={line width=.3pt, draw=black!50}, 
+minor grid style={line width=0.1pt, draw=gray!50}, 
+width=10cm, height=10cm, 
+scale only axis=true, 
+tick label style={font=\small},
+legend style={at={(1,0)},anchor=south east,thick,inner sep=3pt}
+}}
+
+\begin{document}
+\begin{tikzpicture} 
+
+\begin{axis}[my style, xtick={-6.2832,-4.7124,...,6.2832}, xticklabels={$-2\pi$,$-\frac{3}{2}\pi$,$-\pi$,$-\frac{1}{2}\pi$,$0$,$\frac{1}{2}\pi$,$\pi$,$\frac{3}{2}\pi$,$2\pi$}, ytick={-6,-5,...,6}, xmin=-6.2832, xmax=6.2832, ymin=-6, ymax=6, minor tick num=1,restrict y to domain=-20:20,unbounded coords = jump,samples=250,smooth] 
+
+\addplot[color=red,domain=-2*pi:2*pi,no marks,line width=1pt,samples=300]{1/(sin(deg(x)))-1};
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (-pi, -6) (-pi, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (0, -6) (0, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (pi, -6) (pi, 6) };
+\addlegendentry{\(f(x)=\csc (x)-1\)}
+\end{axis} 
+
+\end{tikzpicture}
+\end{document}
+```
 
 # Trigonometric Identities
 
