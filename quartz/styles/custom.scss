@@ -10,22 +10,16 @@
     [stroke="#000000"],
     [stroke="black"],
     [stroke="rgb(0,0,0)"],
-    [stroke="rgb(0%,0%,0%)"] {
+    [stroke="rgb(0%,0%,0%)"],
+    [style*="stroke:#000"],
+    [style*="stroke: #000"],
+    [style*="stroke:rgb(0,0,0)"],
+    [style*="stroke: rgb(0,0,0)"],
+    [style*="stroke:rgb(0%,0%,0%)"],
+    [style*="stroke: rgb(0%,0%,0%)"],
+    [style*="stroke:black"],
+    [style*="stroke: black"] {
       stroke: var(--dark) !important;
-    }
-    :not(text):not(tspan)[fill="#000"],
-    :not(text):not(tspan)[fill="#000000"],
-    :not(text):not(tspan)[fill="black"],
-    :not(text):not(tspan)[fill="rgb(0,0,0)"],
-    :not(text):not(tspan)[fill="rgb(0%,0%,0%)"] {
-      fill: var(--dark) !important;
-    }
-    path:not([fill]),
-    circle:not([fill]),
-    rect:not([fill]),
-    polygon:not([fill]),
-    ellipse:not([fill]) {
-      fill: var(--dark);
     }
   }
 }
