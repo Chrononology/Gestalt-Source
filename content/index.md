@@ -2,7 +2,7 @@
 publish: true
 title: Gestalt
 created: 2026-10-29T16:27:45.426Z
-modified: 2026-11-15T13:22:35.041Z
+modified: 2026-11-15T16:44:32.689Z
 ---
 
 (noun)
@@ -35,11 +35,10 @@ Thoughts? Comments? Suggestions? Please check out this [Feedback Form](https://f
 # What's New?
 
 [[Changelog|Full Changelog Here]]
-**2026-Nov-15:**
+**2026-Nov-16:**
 
-- Added Trigonometric Graphs
+- Added a fix for tikz (math graphs) graphics
 - Removed Energy Drinks
-- Removed a Lost Rain Flower
 
 # What's Next?
 
