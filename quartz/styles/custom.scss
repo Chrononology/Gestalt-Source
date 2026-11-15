@@ -2,3 +2,10 @@
 @use "themes";
 
 // put your custom CSS here!
+:root[saved-theme="dark"] {
+  .tikzdiagram,
+  .tikzdiagram svg,
+  .tikzdiagram img {
+    filter: invert(0.92) hue-rotate(180deg);
+  }
+}
