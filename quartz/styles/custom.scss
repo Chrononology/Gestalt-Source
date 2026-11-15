@@ -6,7 +6,10 @@
   .tikz-diagram,
   .tikz-diagram svg,
   .tikz-diagram img {
-    filter: invert(0.92) hue-rotate(180deg);
+    filter: invert(1) hue-rotate(180deg);
+    text,tspan {
+      filter: invert(100%) hue-rotate(180deg);
+  }
   }
 }
 .tikz-diagram {
