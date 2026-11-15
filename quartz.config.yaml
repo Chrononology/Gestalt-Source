@@ -275,7 +275,7 @@ plugins:
     enabled: true
   - source: github:SongHanseo/quartikz
     enabled: true
-    order: 75
+    order: 1
     options: {}
   - source: github:Chrononology/latex-with-mhchem
     enabled: true
