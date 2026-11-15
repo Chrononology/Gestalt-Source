@@ -340,6 +340,7 @@ inner sep=3pt
 
 \addplot+[-Stealth,color=blue,samples=100,domain=0:7,no marks]{sqrt(x)};
 \addplot+[-Stealth,color=blue,samples=100,domain=0:7,no marks]{-sqrt(x)};
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (1, -7) (1, 7) };
 \addlegendentry{\(y^{2}=x\)}
 \end{axis} 
 
