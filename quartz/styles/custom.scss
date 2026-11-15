@@ -21,6 +21,23 @@
     [style*="stroke: black"] {
       stroke: var(--dark) !important;
     }
+    :not(text):not(tspan)[fill="#fff"],
+    :not(text):not(tspan)[fill="#ffffff"],
+    :not(text):not(tspan)[fill="#FFF"],
+    :not(text):not(tspan)[fill="#FFFFFF"],
+    :not(text):not(tspan)[fill="white"],
+    :not(text):not(tspan)[fill="rgb(255,255,255)"],
+    :not(text):not(tspan)[fill="rgb(100%,100%,100%)"],
+    :not(text):not(tspan)[style*="fill:#fff"],
+    :not(text):not(tspan)[style*="fill: #fff"],
+    [style*="fill:rgb(255,255,255)"],
+    [style*="fill: rgb(255,255,255)"],
+    [style*="fill:rgb(100%,100%,100%)"],
+    [style*="fill: rgb(100%,100%,100%)"],
+    [style*="fill:white"],
+    [style*="fill: white"] {
+    fill: var(--light) !important;
+    }
   }
 }
 .tikz-diagram {
