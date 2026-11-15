@@ -3,9 +3,20 @@
 
 // put your custom CSS here!
 :root[saved-theme="dark"] {
-  .tikzdiagram,
-  .tikzdiagram svg,
-  .tikzdiagram img {
+  .tikz-diagram,
+  .tikz-diagram svg,
+  .tikz-diagram img {
     filter: invert(0.92) hue-rotate(180deg);
+  }
+}
+.tikz-diagram {
+  display: block;
+  margin: 1.5rem auto;
+  max-width: 100%;
+  height: auto;
+
+  svg {
+    max-width: 100%;
+    height: auto;
   }
 }
