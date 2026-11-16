@@ -15,15 +15,20 @@ $$
 - Equations
 
 $$
-E=\left\{ (x,y):y=\frac{1}{2}x, a,b=\in \mathbb{N} \right\}\\ \\
-=\left\{ (2,1),\left( 3, \frac{3}{2} \right),(4,2),\dots \right\}
+\begin{aligned}
+E&=\left\{ (x,y):y=\frac{1}{2}x, a,b=\in \mathbb{N} \right\}\\ \\
+&=\left\{ (2,1),\left( 3, \frac{3}{2} \right),(4,2),\dots \right\}
+\end{aligned}
 $$
 
 - Inequalities
 
 $$
-G=\{(x,y):x, y \in \mathbb{N}, x<y<10\}\\ \\
-=\{(2,3),(1,4),(4,8),\dots\}
+\begin{aligned}
+G&=\{(x,y):x, y \in \mathbb{N}, x<y<10\}\\ \\
+&=\{(2,3),(1,4),(4,8),\dots\}
+
+\end{aligned}
 $$
 
 - Table of Values
@@ -82,7 +87,7 @@ $$
 
 \begin{axis}[my style, xtick={-5,-4,...,5}, ytick={-5,-4,...,5}, xmin=-5, xmax=5, ymin=-5, ymax=5] 
 
-\addplot+[Stealth-Stealth,no marks,domain=-5:5]{x};
+\addplot+[Stealth-Stealth,no marks,domain=-5:5,line width=1pt]{x};
 
 \end{axis} 
 
@@ -291,7 +296,7 @@ inner sep=3pt
 \begin{axis}[my style, xtick={-16,-14,-12,...,16}, ytick={-16,-14,-12,...,16}, xmin=-15, xmax=15, ymin=-15, ymax=15, minor tick num=1] 
 
 \addplot[blue,mark=*,only marks] coordinates {(0,2)(1,4)(2,6)(3,8)(4,10)(5,12)};
-\addplot+[Stealth-Stealth,no marks,red,thick,domain=-8.5:6.5]{2*x+2};
+\addplot+[Stealth-Stealth,no marks,red,thick,domain=-8.5:6.5,line width=1pt]{2*x+2};
 
 \end{axis} 
 
@@ -338,8 +343,8 @@ inner sep=3pt
 
 \begin{axis}[my style, xtick={-7,-6,...,7}, ytick={-7,-6,...,7}, xmin=-7, xmax=7, ymin=-7, ymax=7,samples=100] 
 
-\addplot+[-Stealth,color=blue,samples=100,domain=0:7,no marks]{sqrt(x)};
-\addplot+[-Stealth,color=blue,samples=100,domain=0:7,no marks]{-sqrt(x)};
+\addplot+[-Stealth,color=blue,samples=100,domain=0:7,no marks,line width=1pt]{sqrt(x)};
+\addplot+[-Stealth,color=blue,samples=100,domain=0:7,no marks,line width=1pt]{-sqrt(x)};
 \addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (1, -7) (1, 7) };
 \addlegendentry{\(y^{2}=x\)}
 \end{axis} 
@@ -489,10 +494,13 @@ Let ${}x_{1}=1{}$ and ${}x_{2}=2{}$
 Observe the functions ${}f(x_{1}){}$ and ${}f(x_{2}){}$:
 
 $$
-x_{1}<x_{2}\iff f(x_{1})<f(x_{2})\\
-f(x_{1})<f(x_{2})\\
-\implies x_{1}<x_{2}\\
-\implies 1<2\\
+x_{1}<x_{2}\iff f(x_{1})<f(x_{2})\\ \\
+\begin{aligned}
+f(x_{1})<f(x_{2})
+&\implies x_{1}<x_{2}\\
+&\implies 1<2
+\end{aligned}
+\\
 \therefore f(x) \text{ is increasing on the interval }I
 $$
 
@@ -533,12 +541,13 @@ Let ${}x_{1}=1{}$ and ${}x_{2}=2{}$
 Observe the functions ${}f(x_{1}){}$ and ${}f(x_{2}){}$
 
 $$
-x_{1}<x_{2}\iff f(x_{1})>f(x_{2})\\
-f(x_{1})>f(x_{2})\\
-\implies -x_{1}+10>-x_{2}+10\\
-\implies -1+3>-2+3\\
-\implies 2>1\\
-\therefore g(x) \text{ is decreasing on the interval }I
+x_{1}<x_{2}\iff f(x_{1})>f(x_{2})\\ \\
+\begin{aligned}
+f(x_{1})>f(x_{2})&\implies -x_{1}+10>-x_{2}+10\\
+&\implies -1+3>-2+3\\
+&\implies 2>1\\
+\end{aligned}
+\\ \therefore g(x) \text{ is decreasing on the interval }I
 $$
 
 A function ${}y=f(x){}$ is said to be constant on an interval ${}I{}$ if for all ${}x_{1},x_{2}\in I{}$,
@@ -578,8 +587,8 @@ Let ${}x_{1}=1{}$ and ${}x_{2}=2{}$
 Observe the functions ${}f(x_{1}){}$ and ${}f(x_{2}){}$
 
 $$
-x_{1}<x_{2}\iff f(x_{1})=f(x_{2})\\
-f(x_{1})=f(x_{2})\\
+x_{1}<x_{2}\iff f(x_{1})=f(x_{2})\\ \\
+f(x_{1})=f(x_{2})
 \implies 2=2\\
 \therefore h(x) \text{ is constant on the interval }I
 $$

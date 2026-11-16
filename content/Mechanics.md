@@ -29,6 +29,8 @@ Motion in two or three dimensions involve mixing both the kinematics of the ${}x
 
 _Main note: [[Dynamics]]_
 
+Dynamics aim to explain motion and describe the relation of motion and forces.
+
 # Work and Energy
 
 ## Work

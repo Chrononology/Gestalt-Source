@@ -5,6 +5,7 @@
 - TikZ/Math Graph Graphics fix
 - Dynamics
 - Newton's laws of motion
+- Forces
 
 ## Removed
 
