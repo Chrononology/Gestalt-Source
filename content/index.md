@@ -2,7 +2,7 @@
 publish: true
 title: Gestalt
 created: 2026-10-29T16:27:45.426Z
-modified: 2026-11-16T04:27:02.447Z
+modified: 2026-11-16T04:34:32.317Z
 ---
 
 (noun)
@@ -22,13 +22,9 @@ To get started, try searching for a topic in the searchbar or clicking though li
 
 # Notes
 
-Some (by some I mean a lot) of the TikZ renders are unavailable for the time being.
+TikZ graphics/renders are now available! You can now see the graphs in [[Functions]] and [[Trigonometry]]!!!
 
-Ill try to find a way to fix it soon${}^{tm}{}$.
-
-For the mean time, please visit this google drive: [Click me!](https://drive.google.com/drive/folders/1fEGJqMgsJMxe3hjyWttUvkMz0P-0K-oQ?usp=sharing)
-
-This site is still a **work in progress** so there will be missing graphics.
+This site is still a **work in progress** so there will be incomplete notes.
 
 Thoughts? Comments? Suggestions? Please check out this [Feedback Form](https://forms.gle/i3HPh6pihA5mXg427)
 
