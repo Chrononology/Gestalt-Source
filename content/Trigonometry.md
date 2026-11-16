@@ -560,7 +560,7 @@ legend style={at={(1,0)},anchor=south east,thick,inner sep=3pt}
 ### Tangent function
 
 $$
-y=\frac{A\sin(Bx+C)+D}{A\cos(Bx+C)+D}=A\tan(Bx-C)+D
+y=\frac{A\sin(Bx-C)+D}{A\cos(Bx-C)+D}=A\tan(Bx-C)+D
 $$
 
 ```tikz
@@ -891,11 +891,11 @@ legend style={at={(1,0)},anchor=south east,thick,inner sep=3pt}
 
 \begin{axis}[my style, xtick={-6.2832,-4.7124,...,6.2832}, xticklabels={$-2\pi$,$-\frac{3}{2}\pi$,$-\pi$,$-\frac{1}{2}\pi$,$0$,$\frac{1}{2}\pi$,$\pi$,$\frac{3}{2}\pi$,$2\pi$}, ytick={-6,-5,...,6}, xmin=-6.2832, xmax=6.2832, ymin=-6, ymax=6, minor tick num=1,restrict y to domain=-20:20,unbounded coords = jump,samples=250,smooth] 
 
-\addplot[color=blue,domain=-2*pi:2*pi,no marks,line width=1pt]{tan(deg(x+1))+1};
-\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (-(3/4)*pi, -6) (-(3/4)*pi, 6) };
-\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { ((1/4)*pi, -6) ((1/4)*pi, 6) };
-\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (-(7/4)*pi, -6) (-(7/4)*pi, 6) };
-\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { ((5/4)*pi, -6) ((5/4)*pi, 6) };
+\addplot[color=blue,domain=-2*pi:2*pi,no marks,line width=1pt]{tan(deg(x))+1};
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (-(3/2)*pi, -6) (-(3/2)*pi, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { (-(1/2)*pi, -6) (-(1/2)*pi, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { ((3/2)*pi, -6) ((3/2)*pi, 6) };
+\addplot+[no marks, red!50, dashed,line width=1pt] coordinates { ((1/2)*pi, -6) ((1/2)*pi, 6) };
 \addlegendentry{\(f(x)=\tan (x)+1\)}
 \end{axis} 
 

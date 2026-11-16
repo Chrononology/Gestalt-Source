@@ -3,6 +3,8 @@
 ## Added
 
 - TikZ/Math Graph Graphics fix
+- Dynamics
+- Newton's laws of motion
 
 ## Removed
 

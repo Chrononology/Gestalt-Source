@@ -17,19 +17,17 @@ One may travel 20m to and from a shop but their total displacement is simply ${}
 
 _Main note: [[Kinematics]]_
 
+Motion along a straight line (usually with constant acceleration) involves either the ${}x{}$-axis or the ${}y{}$-axis.
+
 # Motion in Two or Three Dimensions (2D/3D Kinematics)
 
 _Main note: [[Kinematics]]_
 
-# Newton's Laws of Motion
+Motion in two or three dimensions involve mixing both the kinematics of the ${}x{}$- and ${}y{}$-axes. The path taken by a _projectile_ in a two dimensional plane is parabolic. This may also usually apply to projectiles travelling in three-dimensions.
 
-## First Law
+# Dynamics
 
-## Second Law
-
-## Third Law
-
-# Application of Newton's Laws of Motion
+_Main note: [[Dynamics]]_
 
 # Work and Energy
 
