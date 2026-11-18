@@ -75,6 +75,45 @@ Instantaneous Velocity is the first derivative of displacement.
 
 The displacement is the ${}y{}$-axis and the time (interval) is the ${}x{}$-axis. The slope of any 2 points in the graph is the average velocity. The slope of the tangent at a point ${}t{}$ is the instantaneous velocity.
 
+```tikz
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepgflibrary{shapes.geometric}
+\usetikzlibrary{calc,arrows.meta}
+\pgfplotsset{my style/.append style={
+axis line style={-Latex,line width=1pt}, 
+axis lines=middle, 
+xlabel={$t$}, ylabel={$x$}, 
+axis equal, grid=both, 
+major grid style={line width=.3pt, draw=black!50}, 
+minor grid style={line width=0.1pt, draw=gray!50}, 
+width=10cm, height=10cm, 
+scale only axis=true, 
+tick label style={font=\small},
+legend style={at={(1,0)},anchor=south east,thick,inner sep=3pt}
+}}
+
+\begin{document}
+\begin{tikzpicture} 
+
+\begin{axis}[my style, xtick={0,5,10,...,20}, ytick={0,5,10,...,20}, xmin=0, xmax=20, ymin=0, ymax=20,restrict y to domain=-20:40,minor tick num=4] 
+
+\addplot[samples=100,domain=0:20,no marks,line width=1pt]{0.07*x^4-0.7*x^3+1.87*x^2+1.3*x};
+\addplot[no marks, color=blue,dashed,line width=1pt] coordinates {(2, 0) (2, 5.6) };
+\addplot[no marks, color=blue,dashed,line width=1pt] coordinates {(6, 0) (6, 14.64) };
+\addplot[no marks, color=blue,dashed,line width=1pt] coordinates {(0, 5.6) (2, 5.6) };
+\addplot[no marks, color=blue,dashed,line width=1pt] coordinates {(0, 14.64) (6, 14.64) };
+\addplot[no marks, color=green,line width=1pt] coordinates {(2, 5.6) (6, 14.64) };
+\node[circle,fill=black,inner sep=2pt,label={right:$P_{1}$}] at (axis cs:2,5.6){};
+\node[circle,fill=black,inner sep=2pt,label={right:$P_{2}$}] at (axis cs:6,14.64){};
+\addplot[dashed,samples=100,domain=4:6,no marks,line width=1pt]{2.5*(x-5)+9.5};
+\node[circle,fill=blue,inner sep=2pt,label={right:$v(5)$}] at (axis cs:5,9.5){};
+\end{axis} 
+
+\end{tikzpicture}
+\end{document}
+```
+
 ## Acceleration
 
 ### Average Acceleration
@@ -110,6 +149,45 @@ Instantaneous Acceleration is the second derivative of displacement and is a der
 ### v-t graph
 
 The velocity is the ${}y{}$-axis and the time (interval) is the ${}x{}$-axis. The slope of any 2 points in the graph is the average acceleration. The slope of the tangent at a point ${}t{}$ is the instantaneous acceleration.
+
+```tikz
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepgflibrary{shapes.geometric}
+\usetikzlibrary{calc,arrows.meta}
+\pgfplotsset{my style/.append style={
+axis line style={-Latex,line width=1pt}, 
+axis lines=middle, 
+xlabel={$t$}, ylabel={$v$}, 
+axis equal, grid=both, 
+major grid style={line width=.3pt, draw=black!50}, 
+minor grid style={line width=0.1pt, draw=gray!50}, 
+width=10cm, height=10cm, 
+scale only axis=true, 
+tick label style={font=\small},
+legend style={at={(1,0)},anchor=south east,thick,inner sep=3pt}
+}}
+
+\begin{document}
+\begin{tikzpicture} 
+
+\begin{axis}[my style, xtick={0,5,...,20}, ytick={0,5,...,20}, xmin=0, xmax=20, ymin=0, ymax=20,restrict y to domain=-20:40,minor tick num=4] 
+
+\addplot[samples=100,domain=0:20,no marks,line width=1pt]{(4*0.07)*x^3 - (3*0.7)*x^2 + (2*1.87)*x + 1.3};
+\addplot[no marks, color=blue,dashed,line width=1pt] coordinates {(2, 0) (2, 2.62) };
+\addplot[no marks, color=blue,dashed,line width=1pt] coordinates {(6, 0) (6, 8.62) };
+\addplot[no marks, color=blue,dashed,line width=1pt] coordinates {(0, 2.62) (2, 2.62) };
+\addplot[no marks, color=blue,dashed,line width=1pt] coordinates {(0, 8.62) (6, 8.62) };
+\addplot[no marks, color=green,line width=1pt] coordinates {(2, 2.62) (6, 8.62) };
+\node[circle,fill=black,inner sep=2pt,label={right:$P_{1}$}] at (axis cs:2,2.62){};
+\node[circle,fill=black,inner sep=2pt,label={right:$P_{2}$}] at (axis cs:6,8.62){};
+\addplot[samples=100,dashed,domain=4:6,no marks,line width=1pt]{3.74*(x-5)+2.5};
+\node[circle,fill=blue,inner sep=2pt,label={right:$a(5)$}] at (axis cs:5,2.5){};
+\end{axis} 
+
+\end{tikzpicture}
+\end{document}
+```
 
 ### Constant Acceleration
 
