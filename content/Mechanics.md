@@ -33,6 +33,8 @@ Dynamics aim to explain motion and describe the relation of motion and forces.
 
 # Work and Energy
 
+_Main note: [[Work and Energy]]_
+
 ## Work
 
 Work is the product of the applied force and distance travelled/displacement

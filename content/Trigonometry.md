@@ -1980,9 +1980,24 @@ $$
 | ${}QIII{}$ |      -       |      -       |      +       |      +       |      +       |      +       |
 | ${}QIV{}$  |      -       |      +       |      -       |      -       |      +       |      -       |
 
+## Sum and Difference Identities
+
 $$
 \sin(a\pm b)=\sin a\cos b\pm\cos a\sin b\\
-\cos(a\pm b)=\cos a\cos b\mp\sin a\sin b
+\cos(a\pm b)=\cos a\cos b\mp\sin a\sin b\\
+\tan(a\pm b)=\frac{\tan a\pm\tan b}{1\mp \tan a \tan b}
+$$
+
+## Double-Angle Identities
+
+$$
+\sin(2\theta)=2\sin\theta \cos\theta\\
+\begin{aligned}
+\cos(2\theta)&=\cos ^{2}\theta-\sin ^{2}\theta \\
+&=1-2\sin ^{2}\theta \\
+&=2\cos ^{2}\theta-1
+\end{aligned}\\
+\tan(2\theta)=\frac{2\tan\theta}{1-\tan ^{2}\theta}
 $$
 
 # Inverse Trigonometic Functions

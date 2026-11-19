@@ -1,4 +1,4 @@
-**Chemical Bonding** is a core concept of [[Chemistry]] usually taught in [[General Chemistry]]
+**Chemical Bonding** is a core concept of [[Chemistry]] usually taught in [[General Chemistry]].
 
 # Valence Electrons
 
@@ -25,11 +25,67 @@ Recommended dot placing order:
 7. Left
 8. Right
 
+Arrows represent the electron donation (the tail is from the donor and the head is to the receiptient)
+A single-barbed arrow represents the donation or displacement of ${}1e^{-}{}$:
+
+```tikz
+\usetikzlibrary{arrows.meta}
+\begin{document}
+\begin{tikzpicture}
+\draw[-{Straight Barb[left]},line width=2pt](0,0) to[bend left=45](2,0);
+\end{tikzpicture}
+\end{document}
+```
+
+A double-barbed arrow represents the donation or displacement of ${}2e^{-}{}$:
+
+```tikz
+\usetikzlibrary{arrows.meta}
+\begin{document}
+\begin{tikzpicture}
+\draw[-{Straight Barb},line width=2pt](0,0) to[bend left=45](2,0);
+\end{tikzpicture}
+\end{document}
+```
+
 # Ionic Bonds
 
 Ionic bonding happens between ions (cations and anions) typically of metal to non-metal natures. This is where the cation (metal) gives its valence electrons to the anion (non-metal). The resulting total charge of the compound must be ${}0{}$.
 
 Its LEDS is represented as:
+
+```tikz
+\usetikzlibrary{arrows.meta}
+\usepackage{amsmath}
+\begin{document}
+\begin{tikzpicture}
+\node[font=\fontsize{14}{14}] at (-3,0) {$\mathrm{Na}$};
+\node[font=\fontsize{14}{14}] at (-1,0) {$\mathrm{Cl}$};
+\node[circle,inner sep=1.5pt,fill=red]at(-2.5,0){};
+\node[circle,inner sep=1.5pt,fill=blue]at(-1.5,0){};
+\node[circle,inner sep=1.5pt,fill=blue]at(-0.5,0.2){};
+\node[circle,inner sep=1.5pt,fill=blue]at(-0.5,-0.2){};
+\node[circle,inner sep=1.5pt,fill=blue]at(-0.8,0.5){};
+\node[circle,inner sep=1.5pt,fill=blue]at(-0.8,-0.5){};
+\node[circle,inner sep=1.5pt,fill=blue]at(-1.2,0.5){};
+\node[circle,inner sep=1.5pt,fill=blue]at(-1.2,-0.5){};
+\draw[-{Straight Barb[left]},line width=1pt](-2.5,0) to[bend left=45] (-1.5,0); 
+\draw[-Straight Barb,line width=2pt] (-0.25,0)--(0.25,0);
+\node[font=\fontsize{14}{14}] at (1,0) {$\mathrm{Na}$};
+\node[font=\fontsize{14}{14}] at (3,0) {$\mathrm{Cl}$};
+\node[circle,inner sep=1.5pt]at(1.35,0.3){$+$};
+\node[circle,inner sep=1.5pt]at(3.35,0.3){$-$};
+\node[circle,inner sep=1.5pt,fill=blue]at(2.5,0.2){};
+\node[circle,inner sep=1.5pt,fill=blue]at(2.5,-0.2){};
+\node[circle,inner sep=1.5pt,fill=blue]at(3.5,0.2){};
+\node[circle,inner sep=1.5pt,fill=blue]at(3.5,-0.2){};
+\node[circle,inner sep=1.5pt,fill=blue]at(2.8,0.5){};
+\node[circle,inner sep=1.5pt,fill=blue]at(2.8,-0.5){};
+\node[circle,inner sep=1.5pt,fill=blue]at(3.2,0.5){};
+\node[circle,inner sep=1.5pt,fill=blue]at(3.2,-0.5){};
+\end{tikzpicture}
+\end{document}
+```
 
 A normal ionic bonding nomenclature has a formula of:
 cation + (anion + -ide)

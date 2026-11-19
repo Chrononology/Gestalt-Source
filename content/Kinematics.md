@@ -104,8 +104,8 @@ legend style={at={(1,0)},anchor=south east,thick,inner sep=3pt}
 \addplot[no marks, color=blue,dashed,line width=1pt] coordinates {(0, 5.6) (2, 5.6) };
 \addplot[no marks, color=blue,dashed,line width=1pt] coordinates {(0, 14.64) (6, 14.64) };
 \addplot[no marks, color=green,line width=1pt] coordinates {(2, 5.6) (6, 14.64) };
-\node[circle,fill=black,inner sep=2pt,label={right:$P_{1}$}] at (axis cs:2,5.6){};
-\node[circle,fill=black,inner sep=2pt,label={right:$P_{2}$}] at (axis cs:6,14.64){};
+\node[circle,fill=red,inner sep=2pt,label={right:$P_{1}$}] at (axis cs:2,5.6){};
+\node[circle,fill=red,inner sep=2pt,label={right:$P_{2}$}] at (axis cs:6,14.64){};
 \addplot[dashed,samples=100,domain=4:6,no marks,line width=1pt]{2.5*(x-5)+9.5};
 \node[circle,fill=blue,inner sep=2pt,label={right:$v(5)$}] at (axis cs:5,9.5){};
 \end{axis} 
@@ -179,8 +179,8 @@ legend style={at={(1,0)},anchor=south east,thick,inner sep=3pt}
 \addplot[no marks, color=blue,dashed,line width=1pt] coordinates {(0, 2.62) (2, 2.62) };
 \addplot[no marks, color=blue,dashed,line width=1pt] coordinates {(0, 8.62) (6, 8.62) };
 \addplot[no marks, color=green,line width=1pt] coordinates {(2, 2.62) (6, 8.62) };
-\node[circle,fill=black,inner sep=2pt,label={right:$P_{1}$}] at (axis cs:2,2.62){};
-\node[circle,fill=black,inner sep=2pt,label={right:$P_{2}$}] at (axis cs:6,8.62){};
+\node[circle,fill=red,inner sep=2pt,label={right:$P_{1}$}] at (axis cs:2,2.62){};
+\node[circle,fill=red,inner sep=2pt,label={right:$P_{2}$}] at (axis cs:6,8.62){};
 \addplot[samples=100,dashed,domain=4:6,no marks,line width=1pt]{3.74*(x-5)+2.5};
 \node[circle,fill=blue,inner sep=2pt,label={right:$a(5)$}] at (axis cs:5,2.5){};
 \end{axis} 
