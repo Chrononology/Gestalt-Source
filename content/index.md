@@ -2,7 +2,7 @@
 publish: true
 title: Gestalt
 created: 2026-10-29T16:27:45.426Z
-modified: 2026-11-16T07:16:59.211Z
+modified: 2026-11-19T13:52:46.665Z
 ---
 
 (noun)
@@ -31,12 +31,10 @@ Thoughts? Comments? Suggestions? Please check out this [Feedback Form](https://f
 # What's New?
 
 [[Changelog|Full Changelog Here]]
-**2026-Nov-16:**
+**2026-Nov-19:**
 
-- Added a fix for tikz (math graphs) graphics
-- Added dynamics
-- Added Newton's Law of Motion
-- Added Forces
+- Added Impulse and Momentum
+- Added Work and Energy
 - Removed Energy Drinks
 
 # What's Next?

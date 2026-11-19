@@ -1,3 +1,16 @@
+# 2026-Nov-19
+
+## Added
+
+- Work and Energy
+- Impulse and Momentum
+
+## Removed
+
+- Energy Drinks
+
+## Changed
+
 # 2026-Nov-16
 
 ## Added
