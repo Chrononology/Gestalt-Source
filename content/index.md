@@ -2,7 +2,7 @@
 publish: true
 title: Gestalt
 created: 2026-10-29T16:27:45.426Z
-modified: 2026-11-20T10:55:28.608Z
+modified: 2026-11-20T10:55:50.044Z
 ---
 
 (noun)
@@ -41,7 +41,7 @@ Thoughts? Comments? Suggestions? Please check out this [Feedback Form](https://f
 
 # What's Next?
 
-1. Physics Notes
+1. Sleep
 
 ---
 
