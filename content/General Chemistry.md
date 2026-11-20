@@ -62,6 +62,8 @@ Quantum Chemistry mostly deals with Schrödinger's Wave Equation. Where it can t
 
 _Main note: [[Periodic Trends]]_
 
+Periodic Trends
+
 # Chemical Bonding
 
 _Main note: [[Chemical Bonding]]_

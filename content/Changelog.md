@@ -1,3 +1,19 @@
+# 2026-Nov-20
+
+## Added
+
+- Inverse Trigonometric Functions
+
+## Removed
+
+- Energy Drinks
+- Sanity
+
+## Changed
+
+- Work and Energy -> Energy
+- Impulse and Momentum -> Momentum
+
 # 2026-Nov-19
 
 ## Added

@@ -2002,4 +2002,253 @@ $$
 
 # Inverse Trigonometic Functions
 
+Trigonometric Functions can have an inverse if their domains are restricted.
+
+## Inverse Sine
+
+$$
+y=\sin ^{-1}x=\text{Arcsin }x \iff \sin y=x
+$$
+
+${}D=[-1,1]{}$
+${}R=\left[ -\frac{\pi}{2}, \frac{\pi}{2} \right]{}$
+
+```tikz
+\usepackage{tikz}
+\usepackage{pgfplots,amsmath}
+\usepgflibrary{shapes.geometric}
+\usetikzlibrary{calc,arrows.meta}
+\pgfplotsset{my style/.append style={
+axis line style={-Latex,line width=1pt}, 
+axis lines=middle, 
+xlabel={$x$}, ylabel={$y$}, 
+axis equal, grid=both, 
+major grid style={line width=.3pt, draw=black!50}, 
+minor grid style={line width=0.1pt, draw=gray!50}, 
+width=10cm, height=10cm, 
+scale only axis=true, 
+tick label style={font=\small},
+legend style={at={(1,0)},anchor=south east,thick,inner sep=3pt}
+}}
+
+\begin{document}
+\begin{tikzpicture} 
+
+\begin{axis}[my style, xtick={-6,-5,...,6}, yticklabels={$-2\pi$,$-\frac{3}{2}\pi$,$-\pi$,$-\frac{1}{2}\pi$,$0$,$\frac{1}{2}\pi$,$\pi$,$\frac{3}{2}\pi$,$2\pi$}, ytick={-6.2832,-4.7124,...,6.2832}, ymin=-6.2832, ymax=6.2832, xmin=-6, xmax=6, minor tick num=1] 
+
+\addplot[color=green,samples=100,domain=-1:1,no marks,line width=1pt]{asin(x)*pi/180};
+\addlegendentry{\(f(x)=\sin^{-1} x\)}
+\end{axis} 
+
+\end{tikzpicture}
+\end{document}
+```
+
+## Inverse Cosine
+
+$$
+y=\cos ^{-1}x=\text{Arccos }x \iff \cos y=x
+$$
+
+${}D=[-1,1]{}$
+${}R=\left[ 0, \pi \right]{}$
+
+```tikz
+\usepackage{tikz}
+\usepackage{pgfplots,amsmath}
+\usepgflibrary{shapes.geometric}
+\usetikzlibrary{calc,arrows.meta}
+\pgfplotsset{my style/.append style={
+axis line style={-Latex,line width=1pt}, 
+axis lines=middle, 
+xlabel={$x$}, ylabel={$y$}, 
+axis equal, grid=both, 
+major grid style={line width=.3pt, draw=black!50}, 
+minor grid style={line width=0.1pt, draw=gray!50}, 
+width=10cm, height=10cm, 
+scale only axis=true, 
+tick label style={font=\small},
+legend style={at={(1,0)},anchor=south east,thick,inner sep=3pt}
+}}
+
+\begin{document}
+\begin{tikzpicture} 
+
+\begin{axis}[my style, xtick={-6,-5,...,6}, yticklabels={$-2\pi$,$-\frac{3}{2}\pi$,$-\pi$,$-\frac{1}{2}\pi$,$0$,$\frac{1}{2}\pi$,$\pi$,$\frac{3}{2}\pi$,$2\pi$}, ytick={-6.2832,-4.7124,...,6.2832}, ymin=-6.2832, ymax=6.2832, xmin=-6, xmax=6, minor tick num=1] 
+
+\addplot[color=green,samples=100,domain=-1:1,no marks,line width=1pt]{acos(x)*pi/180};
+\addlegendentry{\(f(x)=\cos^{-1} x\)}
+\end{axis} 
+
+\end{tikzpicture}
+\end{document}
+```
+
+## Inverse Tangent
+
+$$
+y=\tan ^{-1}x=\text{Arctan }x \iff \tan y=x
+$$
+
+${}D=\mathbb{R}{}$
+${}R=\left( -\frac{1}{2}\pi, \frac{1}{2}\pi \right){}$
+
+```tikz
+\usepackage{tikz}
+\usepackage{pgfplots,amsmath}
+\usepgflibrary{shapes.geometric}
+\usetikzlibrary{calc,arrows.meta}
+\pgfplotsset{my style/.append style={
+axis line style={-Latex,line width=1pt}, 
+axis lines=middle, 
+xlabel={$x$}, ylabel={$y$}, 
+axis equal, grid=both, 
+major grid style={line width=.3pt, draw=black!50}, 
+minor grid style={line width=0.1pt, draw=gray!50}, 
+width=10cm, height=10cm, 
+scale only axis=true, 
+tick label style={font=\small},
+legend style={at={(1,0)},anchor=south east,thick,inner sep=3pt}
+}}
+
+\begin{document}
+\begin{tikzpicture} 
+
+\begin{axis}[my style, xtick={-6,-5,...,6}, yticklabels={$-2\pi$,$-\frac{3}{2}\pi$,$-\pi$,$-\frac{1}{2}\pi$,$0$,$\frac{1}{2}\pi$,$\pi$,$\frac{3}{2}\pi$,$2\pi$}, ytick={-6.2832,-4.7124,...,6.2832}, ymin=-6.2832, ymax=6.2832, xmin=-6, xmax=6, minor tick num=1] 
+
+\addplot[color=green,samples=100,domain=-6:6,no marks,line width=1pt]{atan(x)*pi/180};
+\addlegendentry{\(f(x)=\tan^{-1} x\)}
+\end{axis} 
+
+\end{tikzpicture}
+\end{document}
+```
+
+## Inverse Cotangent
+
+$$
+y=\cot ^{-1}x=\text{Arccot }x \iff \cot y=x
+$$
+
+${}D=\mathbb{R}{}$
+${}R=\left( 0, \pi \right){}$
+Note:
+
+$$
+\cot ^{-1}x=\tan ^{-1}\left( \frac{1}{x} \right)
+$$
+
+```tikz
+\usepackage{tikz}
+\usepackage{pgfplots,amsmath}
+\usepgflibrary{shapes.geometric}
+\usetikzlibrary{calc,arrows.meta}
+\pgfplotsset{my style/.append style={
+axis line style={-Latex,line width=1pt}, 
+axis lines=middle, 
+xlabel={$x$}, ylabel={$y$}, 
+axis equal, grid=both, 
+major grid style={line width=.3pt, draw=black!50}, 
+minor grid style={line width=0.1pt, draw=gray!50}, 
+width=10cm, height=10cm, 
+scale only axis=true, 
+tick label style={font=\small},
+legend style={at={(1,0)},anchor=south east,thick,inner sep=3pt}
+}}
+
+\begin{document}
+\begin{tikzpicture} 
+
+\begin{axis}[my style, xtick={-6,-5,...,6}, yticklabels={$-2\pi$,$-\frac{3}{2}\pi$,$-\pi$,$-\frac{1}{2}\pi$,$0$,$\frac{1}{2}\pi$,$\pi$,$\frac{3}{2}\pi$,$2\pi$}, ytick={-6.2832,-4.7124,...,6.2832}, ymin=-6.2832, ymax=6.2832, xmin=-6, xmax=6, minor tick num=1,restrict y to domain=-20:20,unbounded coords = jump,samples=200,smooth] 
+
+\addplot[color=green,domain=-6:6,no marks,line width=1pt]{pi/2 - rad(atan(x))};
+\addlegendentry{\(f(x)=\tan^{-1} x\)}
+\end{axis} 
+
+\end{tikzpicture}
+\end{document}
+```
+
+## Inverse Secant
+
+$$
+y=\sec ^{-1}x=\text{Arcsec }x \iff \sec y=x
+$$
+
+${}D=(-\infty,-1]\cup[1,\infty){}$
+${}R=\left[ 0, \frac{\pi}{}2)\cup(\frac{\pi}{2},\pi \right]{}$
+
+```tikz
+\usepackage{tikz}
+\usepackage{pgfplots,amsmath}
+\usepgflibrary{shapes.geometric}
+\usetikzlibrary{calc,arrows.meta}
+\pgfplotsset{my style/.append style={
+axis line style={-Latex,line width=1pt}, 
+axis lines=middle, 
+xlabel={$x$}, ylabel={$y$}, 
+axis equal, grid=both, 
+major grid style={line width=.3pt, draw=black!50}, 
+minor grid style={line width=0.1pt, draw=gray!50}, 
+width=10cm, height=10cm, 
+scale only axis=true, 
+tick label style={font=\small},
+legend style={at={(1,0)},anchor=south east,thick,inner sep=3pt}
+}}
+
+\begin{document}
+\begin{tikzpicture} 
+
+\begin{axis}[my style, xtick={-6,-5,...,6}, yticklabels={$-2\pi$,$-\frac{3}{2}\pi$,$-\pi$,$-\frac{1}{2}\pi$,$0$,$\frac{1}{2}\pi$,$\pi$,$\frac{3}{2}\pi$,$2\pi$}, ytick={-6.2832,-4.7124,...,6.2832}, ymin=-6.2832, ymax=6.2832, xmin=-6, xmax=6, minor tick num=1,restrict y to domain=-6:6,unbounded coords=jump,samples=200,smooth] 
+
+\addplot[color=green,domain=-6:-1,no marks,line width=1pt]{(rad(acos(1/x)))};
+\addplot[color=green,domain=6:1,no marks,line width=1pt]{(rad(acos(1/x)))};
+\addlegendentry{\(f(x)=\sec^{-1} x\)}
+\end{axis} 
+
+\end{tikzpicture}
+\end{document}
+```
+
+## Inverse Secant
+
+$$
+y=\csc ^{-1}x=\text{Arccsc }x \iff \csc y=x
+$$
+
+${}D=(-\infty,-1]\cup[1,\infty){}$
+${}R=\left[ -\frac{\pi}{2}, 0)\cup(0, \frac{\pi}{2} \right]{}$
+
+```tikz
+\usepackage{tikz}
+\usepackage{pgfplots,amsmath}
+\usepgflibrary{shapes.geometric}
+\usetikzlibrary{calc,arrows.meta}
+\pgfplotsset{my style/.append style={
+axis line style={-Latex,line width=1pt}, 
+axis lines=middle, 
+xlabel={$x$}, ylabel={$y$}, 
+axis equal, grid=both, 
+major grid style={line width=.3pt, draw=black!50}, 
+minor grid style={line width=0.1pt, draw=gray!50}, 
+width=10cm, height=10cm, 
+scale only axis=true, 
+tick label style={font=\small},
+legend style={at={(1,0)},anchor=south east,thick,inner sep=3pt}
+}}
+
+\begin{document}
+\begin{tikzpicture} 
+
+\begin{axis}[my style, xtick={-6,-5,...,6}, yticklabels={$-2\pi$,$-\frac{3}{2}\pi$,$-\pi$,$-\frac{1}{2}\pi$,$0$,$\frac{1}{2}\pi$,$\pi$,$\frac{3}{2}\pi$,$2\pi$}, ytick={-6.2832,-4.7124,...,6.2832}, ymin=-6.2832, ymax=6.2832, xmin=-6, xmax=6, minor tick num=1,restrict y to domain=-6:6,unbounded coords=jump,samples=200,smooth] 
+
+\addplot[color=green,domain=-6:-1,no marks,line width=1pt]{(rad(asin(1/x)))};
+\addplot[color=green,domain=6:1,no marks,line width=1pt]{(rad(asin(1/x)))};
+\addlegendentry{\(f(x)=\csc^{-1} x\)}
+\end{axis} 
+
+\end{tikzpicture}
+\end{document}
+```
+
 # Trigonometric Equations

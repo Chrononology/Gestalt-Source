@@ -2,7 +2,7 @@
 publish: true
 title: Gestalt
 created: 2026-10-29T16:27:45.426Z
-modified: 2026-11-19T13:52:46.665Z
+modified: 2026-11-20T10:55:28.608Z
 ---
 
 (noun)
@@ -31,11 +31,13 @@ Thoughts? Comments? Suggestions? Please check out this [Feedback Form](https://f
 # What's New?
 
 [[Changelog|Full Changelog Here]]
-**2026-Nov-19:**
+**2026-Nov-20:**
 
-- Added Impulse and Momentum
-- Added Work and Energy
+- Added Inverse Trigonometry Functions
 - Removed Energy Drinks
+- Removed Sanity
+- Changed **Work and Energy** to **Energy**
+- Changed **Impulse and Momentum** to **Momentum**
 
 # What's Next?
 

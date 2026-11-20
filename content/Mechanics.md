@@ -33,26 +33,14 @@ Dynamics aim to explain motion and describe the relation of motion and forces.
 
 # Work and Energy
 
-_Main note: [[Work and Energy]]_
+_Main note: [[Energy]]_
+
+Work is the transferred energy when an object is displaced by force.
+Energy is the capacity of something to do work.
 
 # Impulse and Momentum
 
-## Momentum
+_Main note: [[Momentum]]_
 
-$$
-p=mv
-$$
-
-## Impulse
-
-Change in momentum
-
-$$
-I=\Delta p=F\Delta t
-$$
-
-## Impulse-Momentum Theorem
-
-$$
-m_{1a}v_{1a}+m_{1b}v_{1b}=m_{2a}v_{2a}+m_{2b}v_{2b}
-$$
+Momentum is the force of mass in motion.
+Impulse is
