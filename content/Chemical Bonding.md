@@ -25,7 +25,7 @@ Recommended dot placing order:
 7. Left
 8. Right
 
-Arrows represent the electron donation (the tail is from the donor and the head is to the receiptient)
+**Arrows** represent the electron donation (the tail is from the donor and the head is to the receiptient)
 A single-barbed arrow represents the donation or displacement of ${}1e^{-}{}$:
 
 ```tikz
@@ -47,6 +47,45 @@ A double-barbed arrow represents the donation or displacement of ${}2e^{-}{}$:
 \end{tikzpicture}
 \end{document}
 ```
+
+**Lines** between atoms represent the sharing of electrons:
+A single line represents a single bond and the sharing of 2 electrons:
+
+```tikz
+\usetikzlibrary{arrows.meta}
+\begin{document}
+\begin{tikzpicture}
+\draw[line width=1pt](0,0)--(1,0);
+\end{tikzpicture}
+\end{document}
+```
+
+Two lines represents a double bond and the sharing of 4 electrons:
+
+```tikz
+\usetikzlibrary{arrows.meta}
+\begin{document}
+\begin{tikzpicture}
+\draw[line width=1pt](0,0.1)--(1,0.1);
+\draw[line width=1pt](0,-0.1)--(1,-0.1);
+\end{tikzpicture}
+\end{document}
+```
+
+Three lines represents a triple bond and the sharing of 6 electrons:
+
+```tikz
+\usetikzlibrary{arrows.meta}
+\begin{document}
+\begin{tikzpicture}
+\draw[line width=1pt](0,0.2)--(1,0.2);
+\draw[line width=1pt](0,0)--(1,0);
+\draw[line width=1pt](0,-0.2)--(1,-0.2);
+\end{tikzpicture}
+\end{document}
+```
+
+Note that: the central atom in a molecule must be the one that is the least electronegative but **not** hydrogen.
 
 # Ionic Bonds
 
@@ -167,3 +206,128 @@ Examples:
 
 - Hydrogen fluoride
 - Hydrofluoric acid
+
+# Resonant Structures
+
+Resonant structures are possible structures of a molecule given that: they have proper LEDS and follow the Octet rule.
+
+The representative structure of a molecule is the resonant structure which is more stable. Its stability is based on the formal charges present.
+For a resonant structure to be stable, it must have no formal charges else, the negative formal charge must be on the most electronegative atom.
+
+The formal charge of an atom in a molecule can be calculated by:
+
+$$
+\text{Formal Charge}=\text{Valence Electrons}-\text{Non-Bonding Electrons}-\text{Bonding Pairs} 
+$$
+
+Example: ${}\ce{COBr2}{}$, ${}e^{-}=24{}$
+The representative structure of ${}\ce{COBr2}{}$:
+
+```tikz
+\usetikzlibrary{arrows.meta}
+\usepackage{amsmath}
+\begin{document}
+\begin{tikzpicture}
+\node[font=\fontsize{14}{14}] at (0,0) {$\mathrm{C}$};
+\node[font=\fontsize{14}{14}] at (0,-2) {$\mathrm{Br}$};
+\node[font=\fontsize{14}{14}] at (-2,0) {$\mathrm{Br}$};
+\node[font=\fontsize{14}{14}] at (2,0) {$\mathrm{O}$};
+\draw(0,-0.3)--(0,-1.7);
+\draw(0.3,0.1)--(1.7,0.1);
+\draw(0.3,-0.1)--(1.7,-0.1);
+\draw(-0.3,0)--(-1.7,0);
+\node[circle,inner sep=1.5pt,fill=blue]at(2.3,-0.1){};
+\node[circle,inner sep=1.5pt,fill=blue]at(2.3,0.1){};
+\node[circle,inner sep=1.5pt,fill=blue]at(2.1,-0.4){};
+\node[circle,inner sep=1.5pt,fill=blue]at(2.1,0.4){};
+\node[circle,inner sep=1.5pt,fill=blue]at(2.3,0.1){};
+\node[circle,inner sep=1.5pt,fill=blue]at(-2.4,-0.1){};
+\node[circle,inner sep=1.5pt,fill=blue]at(-2.4,0.1){};
+\node[circle,inner sep=1.5pt,fill=blue]at(-2.1,-0.4){};
+\node[circle,inner sep=1.5pt,fill=blue]at(-1.9,-0.4){};
+\node[circle,inner sep=1.5pt,fill=blue]at(-2.1,0.4){};
+\node[circle,inner sep=1.5pt,fill=blue]at(-1.9,0.4){};
+\node[circle,inner sep=1.5pt,fill=blue]at(0.1,-2.4){};
+\node[circle,inner sep=1.5pt,fill=blue]at(-0.1,-2.4){};
+\node[circle,inner sep=1.5pt,fill=blue]at(0.4,-2.1){};
+\node[circle,inner sep=1.5pt,fill=blue]at(-0.4,-2.1){};
+\node[circle,inner sep=1.5pt,fill=blue]at(0.4,-1.9){};
+\node[circle,inner sep=1.5pt,fill=blue]at(-0.4,-1.9){};
+
+\end{tikzpicture}
+\end{document}
+```
+
+Its resonant structures:
+
+```tikz
+\usetikzlibrary{arrows.meta}
+\usepackage{amsmath}
+\begin{document}
+\begin{tikzpicture}
+\node[font=\fontsize{14}{14}] at (0,0) {$\mathrm{C}$};
+\node[font=\fontsize{14}{14}] at (0,-2) {$\mathrm{Br}$};
+\node[font=\fontsize{14}{14}] at (-2,0) {$\mathrm{Br}$};
+\node[font=\fontsize{14}{14}] at (2,0) {$\mathrm{O}$};
+\draw(-0.1,-0.3)--(-0.1,-1.7);
+\draw(0.1,-0.3)--(0.1,-1.7);
+\draw(0.3,0)--(1.7,0);;
+\draw(-0.3,0)--(-1.7,0);
+\node[circle,inner sep=1.5pt,fill=blue]at(2.3,-0.1){};
+\node[circle,inner sep=1.5pt,fill=blue]at(2.3,0.1){};
+\node[circle,inner sep=1.5pt,fill=blue]at(2.1,-0.4){};
+\node[circle,inner sep=1.5pt,fill=blue]at(2.1,0.4){};
+\node[circle,inner sep=1.5pt,fill=blue]at(1.9,-0.4){};
+\node[circle,inner sep=1.5pt,fill=blue]at(1.9,0.4){};
+\node[circle,inner sep=1.5pt,fill=blue]at(-2.4,-0.1){};
+\node[circle,inner sep=1.5pt,fill=blue]at(-2.4,0.1){};
+\node[circle,inner sep=1.5pt,fill=blue]at(-2.1,-0.4){};
+\node[circle,inner sep=1.5pt,fill=blue]at(-1.9,-0.4){};
+\node[circle,inner sep=1.5pt,fill=blue]at(-2.1,0.4){};
+\node[circle,inner sep=1.5pt,fill=blue]at(-1.9,0.4){};
+\node[circle,inner sep=1.5pt,fill=blue]at(0.1,-2.4){};
+\node[circle,inner sep=1.5pt,fill=blue]at(-0.1,-2.4){};
+\node[circle,inner sep=1.5pt,fill=blue]at(-0.4,-2.1){};
+\node[circle,inner sep=1.5pt,fill=blue]at(-0.4,-1.9){};
+\node[circle,inner sep=1.5pt]at(0.35,-1.7){$+$};
+\node[circle,inner sep=1.5pt]at(2.35,0.3){$-$};
+
+\end{tikzpicture}
+\end{document}
+```
+
+```tikz
+\usetikzlibrary{arrows.meta}
+\usepackage{amsmath}
+\begin{document}
+\begin{tikzpicture}
+\node[font=\fontsize{14}{14}] at (0,0) {$\mathrm{C}$};
+\node[font=\fontsize{14}{14}] at (0,-2) {$\mathrm{Br}$};
+\node[font=\fontsize{14}{14}] at (-2,0) {$\mathrm{Br}$};
+\node[font=\fontsize{14}{14}] at (2,0) {$\mathrm{O}$};
+\draw(0,-0.3)--(0,-1.7);
+\draw(0.3,0)--(1.7,0);
+\draw(-0.3,0.1)--(-1.7,0.1);
+\draw(-0.3,-0.1)--(-1.7,-0.1);
+\node[circle,inner sep=1.5pt,fill=blue]at(2.3,-0.1){};
+\node[circle,inner sep=1.5pt,fill=blue]at(2.3,0.1){};
+\node[circle,inner sep=1.5pt,fill=blue]at(2.1,-0.4){};
+\node[circle,inner sep=1.5pt,fill=blue]at(2.1,0.4){};
+\node[circle,inner sep=1.5pt,fill=blue]at(1.9,-0.4){};
+\node[circle,inner sep=1.5pt,fill=blue]at(1.9,0.4){};
+\node[circle,inner sep=1.5pt,fill=blue]at(-2.1,-0.4){};
+\node[circle,inner sep=1.5pt,fill=blue]at(-1.9,-0.4){};
+\node[circle,inner sep=1.5pt,fill=blue]at(-2.1,0.4){};
+\node[circle,inner sep=1.5pt,fill=blue]at(-1.9,0.4){};
+\node[circle,inner sep=1.5pt,fill=blue]at(0.1,-2.4){};
+\node[circle,inner sep=1.5pt,fill=blue]at(-0.1,-2.4){};
+\node[circle,inner sep=1.5pt,fill=blue]at(-0.4,-2.1){};
+\node[circle,inner sep=1.5pt,fill=blue]at(-0.4,-1.9){};
+\node[circle,inner sep=1.5pt,fill=blue]at(0.4,-1.9){};
+\node[circle,inner sep=1.5pt,fill=blue]at(0.4,-2.1){};
+\node[circle,inner sep=1.5pt]at(-1.65,0.3){$+$};
+\node[circle,inner sep=1.5pt]at(2.35,0.3){$-$};
+
+\end{tikzpicture}
+\end{document}
+```

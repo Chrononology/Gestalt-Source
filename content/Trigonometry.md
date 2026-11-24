@@ -133,6 +133,8 @@ A unit circle is a circle with its center ${}C{}$ at ${}(0,0){}$ and its radius 
 It has an equation of ${}x^{2}+y^{2}=1{}$
 Its circumference ${}C=2\pi{}$
 
+_See also: [[Trigonometric Function Quick Reference Sheet]]_
+
 ## Trigonometric Functions of a Real Number
 
 A real number ${}|t|{}$ is an arc length of a circle from ${}(1,0){}$. The terminal point ${}P(x,y){}$ lies at the end of this arc length.
@@ -2252,3 +2254,7 @@ legend style={at={(1,0)},anchor=south east,thick,inner sep=3pt}
 ```
 
 # Trigonometric Equations
+
+Trigonometric Equations are similar to algebraic equations but with trigonometric functions in them.
+The solution of a trigonometric equation are the values that make the equation true.
+Normally, the number of solutions are infinitely many, therefore it is usually restricted to the range of: ${}[0,2\pi){}$.

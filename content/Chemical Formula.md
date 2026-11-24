@@ -25,7 +25,7 @@ $$
 ## Structural Formula
 
 The structural formula of a compound is usually used in organic compounds where the structure is drawn.
-![[Ketcher/alpha-Glucopyranose.svg]]
+![[Ketcher/alpha-Glucopyranose.svg|279]]
 Glucose
 
 # Converting Between Chemical Formulas

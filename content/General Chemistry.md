@@ -70,6 +70,8 @@ _Main note: [[Chemical Bonding]]_
 
 # Molecular Geometry
 
+_Main note: [[Molecular Geometry]]_
+
 # Intermolecular Forces
 
 # Solutions

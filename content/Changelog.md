@@ -1,3 +1,18 @@
+# 2026-Nov-24
+
+## Added
+
+- Circles
+- Trigonometric Function Quick Reference Sheet
+- Molecular Geometry
+
+## Removed
+
+- Energy Drinks
+- Sanity
+
+## Changed
+
 # 2026-Nov-20
 
 ## Added
