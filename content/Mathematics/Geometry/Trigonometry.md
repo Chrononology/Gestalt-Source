@@ -2002,6 +2002,18 @@ $$
 \tan(2\theta)=\frac{2\tan\theta}{1-\tan ^{2}\theta}
 $$
 
+## Half-Angle Identities
+
+$$
+\sin\left( \frac{1}{2}\theta \right)=\pm \sqrt{ \frac{1-\cos\theta}{2}}\\
+\cos\left( \frac{1}{2}\theta \right)=\pm \sqrt{ \frac{1+\cos\theta}{2} }\\
+\begin{aligned}
+\tan\left( \frac{1}{2}\theta \right)&=\pm \sqrt{ \frac{1-\cos\theta}{1+\cos\theta} } \\
+&=\frac{\sin\theta}{1+\cos\theta} \\
+&=\frac{1-\cos\theta}{\sin\theta}
+\end{aligned}
+$$
+
 # Inverse Trigonometic Functions
 
 Trigonometric Functions can have an inverse if their domains are restricted.
