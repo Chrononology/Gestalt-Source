@@ -21,7 +21,7 @@ Molecular geometry:
 | ${}AB_{3}{}$ |                   |   Trigonal Planar    |             ${}120\degree{}$             |  ![[molview/ab3 render.png\|center]]   |  ![[molview/ab3.png\|center]]   |
 |              | ${}AB_{2}E_{1}{}$ |         Bent         |            ${}<120\degree{}$             |  ![[molview/ab2e render.png\|center]]  |  ![[molview/ab2e.png\|center]]  |
 | ${}AB_{4}{}$ |                   |     Tetrahedral      |            ${}109.5\degree{}$            |  ![[molview/ab4 render.png\|center]]   |  ![[molview/ab4.png\|center]]   |
-|              |   ${}AB_{3}E{}$   |      Pyramidal       |           ${}<109.5\degree{}$            |  ![[molview/ab3e render.png\|center]]  |  ![[molview/ab3e.png\|center]]  |
+|              |   ${}AB_{3}E{}$   |  Trigonal Pyramidal  |           ${}<109.5\degree{}$            |  ![[molview/ab3e render.png\|center]]  |  ![[molview/ab3e.png\|center]]  |
 |              | ${}AB_{2}E_{2}{}$ |         Bent         |           ${}<109.5\degree{}$            | ![[molview/ab2e2 render.png\|center]]  | ![[molview/ab2e2.png\|center]]  |
 | ${}AB_{5}{}$ |                   | Trigonal Bipyramidal |  ${}90\degree,180\degree,120\degree{}$   |  ![[molview/ab5 render.png\|center]]   |  ![[molview/ab5.png\|center]]   |
 |              | ${}AB_{4}E_{1}{}$ |        Seesaw        | ${}<90\degree,<180\degree,<120\degree{}$ |  ![[molview/ab4e render.png\|center]]  |  ![[molview/ab4e.png\|center]]  |

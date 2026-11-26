@@ -2014,7 +2014,7 @@ $$
 \end{aligned}
 $$
 
-# Inverse Trigonometic Functions
+# Inverse Trigonometric Functions
 
 Trigonometric Functions can have an inverse if their domains are restricted.
 
